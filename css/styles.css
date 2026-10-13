@@ -652,6 +652,19 @@ textarea:focus-visible {
   border-top: 2px solid #C9A66B;
 }
 
+/* Footer Giant Watermark: BENCHCODE™ */
+.footer-watermark {
+  user-select: none;
+  pointer-events: none;
+  font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.12) !important;
+  text-align: center;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
 /* Global Justified Text Alignment for Paragraphs, Descriptions, Lists & FAQs */
 p,
 .faq-content,
