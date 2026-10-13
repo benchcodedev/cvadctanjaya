@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <radialGradient id="studioBg" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#FAF7F2"/>
+      <stop offset="100%" stop-color="#F1EADF"/>
+    </radialGradient>
+    <linearGradient id="softLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#E6EFEA" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="moundGrad" x1="25%" y1="15%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#F3EDE2"/>
+      <stop offset="52%" stop-color="#DFD5C5"/>
+      <stop offset="100%" stop-color="#BFB29E"/>
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#FAF7F2"/>
+      <stop offset="100%" stop-color="#E8E1D4"/>
+    </linearGradient>
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2F4A4F" stop-opacity="0.16"/>
+      <stop offset="65%" stop-color="#3F6F6A" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FAF7F2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Warm Cream & Ivory Studio Backdrop -->
+  <rect width="800" height="600" fill="url(#studioBg)"/>
+  <ellipse cx="400" cy="490" rx="340" ry="70" fill="#F1EADF" opacity="0.65"/>
+
+  <!-- Subtle Geometric Sieve Mesh Watermark in Background -->
+  <g opacity="0.22" stroke="#C8A45D" stroke-width="1">
+    <circle cx="660" cy="130" r="76" stroke-dasharray="4 4"/>
+    <circle cx="660" cy="130" r="56"/>
+    <line x1="604" y1="130" x2="716" y2="130"/>
+    <line x1="660" y1="74" x2="660" y2="186"/>
+    <line x1="620" y1="90" x2="700" y2="170"/>
+    <line x1="700" y1="90" x2="620" y2="170"/>
+  </g>
+
+  <!-- Studio Soft Shadow Under Ceramic Bowl -->
+  <ellipse cx="400" cy="422" rx="235" ry="42" fill="url(#floorShadow)"/>
+
+  <!-- Scattered Fine Powder Granules on Studio Surface -->
+  <g>
+    <ellipse cx="215" cy="435" rx="45" ry="12" fill="#DFD5C5" opacity="0.28"/>
+    <ellipse cx="585" cy="432" rx="52" ry="14" fill="#BFB29E" opacity="0.24"/>
+    <circle cx="479.8" cy="285.0" r="1.2" fill="#C8A45D" opacity="0.35"/>
+    <circle cx="313.4" cy="313.5" r="2.1" fill="#DFD5C5" opacity="0.47"/>
+    <circle cx="413.5" cy="229.6" r="3.0" fill="#BFB29E" opacity="0.59"/>
+    <circle cx="517.4" cy="339.9" r="3.9" fill="#C8A45D" opacity="0.71"/>
+    <circle cx="173.0" cy="270.6" r="1.2" fill="#BFB29E" opacity="0.83"/>
+    <circle cx="626.2" cy="233.3" r="2.1" fill="#DFD5C5" opacity="0.35"/>
+    <circle cx="320.8" cy="391.0" r="3.0" fill="#C8A45D" opacity="0.47"/>
+    <circle cx="363.2" cy="259.6" r="3.9" fill="#DFD5C5" opacity="0.59"/>
+    <circle cx="510.4" cy="299.4" r="1.2" fill="#BFB29E" opacity="0.71"/>
+    <circle cx="256.7" cy="306.3" r="2.1" fill="#C8A45D" opacity="0.83"/>
+    <circle cx="481.5" cy="222.3" r="3.0" fill="#BFB29E" opacity="0.35"/>
+    <circle cx="469.3" cy="363.9" r="3.9" fill="#DFD5C5" opacity="0.47"/>
+    <circle cx="167.7" cy="236.9" r="1.2" fill="#C8A45D" opacity="0.59"/>
+    <circle cx="698.7" cy="261.3" r="2.1" fill="#DFD5C5" opacity="0.71"/>
+    <circle cx="354.3" cy="308.4" r="3.0" fill="#BFB29E" opacity="0.83"/>
+    <circle cx="384.7" cy="243.2" r="3.9" fill="#C8A45D" opacity="0.35"/>
+    <circle cx="518.9" cy="320.8" r="1.2" fill="#BFB29E" opacity="0.47"/>
+    <circle cx="207.3" cy="288.0" r="2.1" fill="#DFD5C5" opacity="0.59"/>
+    <circle cx="563.0" cy="226.5" r="3.0" fill="#C8A45D" opacity="0.71"/>
+    <circle cx="388.3" cy="381.1" r="3.9" fill="#DFD5C5" opacity="0.83"/>
+    <circle cx="203.3" cy="200.9" r="1.2" fill="#BFB29E" opacity="0.35"/>
+    <circle cx="479.1" cy="288.7" r="2.1" fill="#C8A45D" opacity="0.47"/>
+    <circle cx="303.8" cy="309.2" r="3.0" fill="#BFB29E" opacity="0.59"/>
+    <circle cx="433.6" cy="230.7" r="3.9" fill="#DFD5C5" opacity="0.71"/>
+    <circle cx="496.4" cy="344.9" r="1.2" fill="#C8A45D" opacity="0.83"/>
+    <circle cx="180.1" cy="260.1" r="2.1" fill="#DFD5C5" opacity="0.35"/>
+    <circle cx="643.1" cy="244.3" r="3.0" fill="#BFB29E" opacity="0.47"/>
+    <circle cx="282.9" cy="386.4" r="3.9" fill="#C8A45D" opacity="0.59"/>
+    <circle cx="372.7" cy="258.1" r="1.2" fill="#BFB29E" opacity="0.71"/>
+    <circle cx="504.2" cy="304.4" r="2.1" fill="#DFD5C5" opacity="0.83"/>
+    <circle cx="250.1" cy="299.4" r="3.0" fill="#C8A45D" opacity="0.35"/>
+    <circle cx="503.6" cy="226.7" r="3.9" fill="#DFD5C5" opacity="0.47"/>
+    <circle cx="440.0" cy="366.4" r="1.2" fill="#BFB29E" opacity="0.59"/>
+    <circle cx="187.2" cy="226.4" r="2.1" fill="#C8A45D" opacity="0.71"/>
+    <circle cx="704.8" cy="275.4" r="3.0" fill="#BFB29E" opacity="0.83"/>
+    <circle cx="346.1" cy="306.1" r="3.9" fill="#DFD5C5" opacity="0.35"/>
+    <circle cx="400.0" cy="242.9" r="1.2" fill="#C8A45D" opacity="0.47"/>
+    <circle cx="504.8" cy="326.0" r="2.1" fill="#DFD5C5" opacity="0.59"/>
+    <circle cx="207.9" cy="279.0" r="3.0" fill="#BFB29E" opacity="0.71"/>
+    <circle cx="582.9" cy="234.7" r="3.9" fill="#C8A45D" opacity="0.83"/>
+    <circle cx="353.4" cy="379.7" r="1.2" fill="#BFB29E" opacity="0.35"/>
+    <circle cx="235.6" cy="192.5" r="2.1" fill="#DFD5C5" opacity="0.47"/>
+    
+  </g>
+
+  <!-- Ceramic Studio Bowl Base & Rim (Back) -->
+  <ellipse cx="400" cy="295" rx="195" ry="52" fill="#F1EADF" stroke="#E8E1D4" stroke-width="2"/>
+
+  <!-- Main Conical Industrial Powder Mound Inside Bowl -->
+  <path d="M218 296 C255 235, 335 162, 400 158 C465 162, 545 235, 582 296 C540 330, 465 342, 400 342 C335 342, 260 330, 218 296 Z" fill="url(#moundGrad)"/>
+
+  <!-- Highlight Ridge on Powder Cone -->
+  <path d="M295 245 C340 195, 375 165, 400 158 C412 162, 392 215, 365 268 C335 280, 305 268, 295 245 Z" fill="#F3EDE2" opacity="0.48"/>
+
+  <!-- Fine Micro-Particles Texture on Mound -->
+  <g>
+    <circle cx="270.0" cy="290.0" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="343.0" cy="261.7" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="416.0" cy="228.9" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="489.0" cy="276.4" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="302.0" cy="254.6" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="375.0" cy="286.3" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="448.0" cy="257.4" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="521.0" cy="254.0" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="334.0" cy="271.3" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="407.0" cy="238.3" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="480.0" cy="283.7" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="293.0" cy="264.2" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="366.0" cy="222.9" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="439.0" cy="266.2" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="512.0" cy="254.8" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="325.0" cy="280.4" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="398.0" cy="248.0" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="471.0" cy="226.6" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="284.0" cy="272.9" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="357.0" cy="233.4" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="430.0" cy="275.3" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="503.0" cy="257.8" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="316.0" cy="288.8" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="389.0" cy="257.8" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="462.0" cy="233.0" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="275.0" cy="280.5" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="348.0" cy="243.8" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="421.0" cy="284.8" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="494.0" cy="262.6" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="307.0" cy="238.8" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="380.0" cy="267.7" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="453.0" cy="240.4" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="526.0" cy="285.5" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="339.0" cy="253.9" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="412.0" cy="219.7" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="485.0" cy="268.7" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="298.0" cy="249.5" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="371.0" cy="277.5" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="444.0" cy="248.6" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="517.0" cy="246.1" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="330.0" cy="263.7" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="403.0" cy="229.3" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="476.0" cy="275.9" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="289.0" cy="259.6" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="362.0" cy="287.1" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="435.0" cy="257.2" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="508.0" cy="247.0" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="321.0" cy="273.0" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="394.0" cy="239.0" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="467.0" cy="284.0" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="280.0" cy="268.9" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="353.0" cy="225.4" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="426.0" cy="266.4" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="499.0" cy="250.0" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="312.0" cy="281.7" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="385.0" cy="249.0" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="458.0" cy="224.0" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="271.0" cy="277.3" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="344.0" cy="236.0" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="417.0" cy="275.8" r="2.4" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="490.0" cy="254.7" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="303.0" cy="289.4" r="1.7" fill="#BFB29E" opacity="0.55"/>
+    <circle cx="376.0" cy="258.9" r="2.4" fill="#C8A45D" opacity="0.55"/>
+    <circle cx="449.0" cy="231.4" r="1.0" fill="#F3EDE2" opacity="0.55"/>
+    <circle cx="522.0" cy="280.3" r="1.7" fill="#C8A45D" opacity="0.55"/>
+    
+  </g>
+
+  <!-- Ceramic Studio Bowl Body (Front) -->
+  <path d="M205 295 C205 385, 288 422, 400 422 C512 422, 595 385, 595 295 C550 332, 478 346, 400 346 C322 346, 250 332, 205 295 Z" fill="url(#bowlGrad)" stroke="#E8E1D4" stroke-width="2"/>
+  <path d="M310 416 C340 426, 460 426, 490 416" stroke="#C8A45D" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Top Left Studio Spec Tag -->
+  <g transform="translate(44, 42)">
+    <rect width="230" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.9" stroke="#E8E1D4" stroke-width="1.5"/>
+    <circle cx="22" cy="20" r="5" fill="#C8A45D"/>
+    <text x="38" y="25" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#2F4A4F" letter-spacing="0.04em">AGRO-FIBER GRADE • MESH 60–100</text>
+  </g>
+
+  <!-- Bottom Caption Strip -->
+  <g transform="translate(44, 505)">
+    <rect width="712" height="58" rx="14" fill="#FFFFFF" fill-opacity="0.88" stroke="#E8E1D4" stroke-width="1.2"/>
+    <text x="24" y="26" font-family="Outfit, Inter, sans-serif" font-size="20" font-weight="700" fill="#2F4A4F">Tepung Onggok Singkong (Cassava Pulp Flour)</text>
+    <text x="24" y="45" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#5E7478">Serbuk serat singkong kering untuk bahan baku pakan ternak & binder</text>
+    <text x="688" y="35" text-anchor="end" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#3F6F6A" letter-spacing="0.08em">CV ADC TANJAYA</text>
+  </g>
+</svg>

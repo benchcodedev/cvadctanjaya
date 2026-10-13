@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none">
+  <rect width="800" height="560" rx="24" fill="#FAF7F2"/>
+  <rect x="24" y="24" width="752" height="512" rx="20" fill="#FFFFFF" stroke="#E8E1D4" stroke-width="1.5"/>
+
+  <g transform="translate(56, 52)">
+    <rect width="688" height="72" rx="16" fill="#E6EFEA"/>
+    <circle cx="42" cy="36" r="18" fill="#3F6F6A"/>
+    <path d="M35 36L40 41L49 31" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="34" font-family="Outfit, Inter, sans-serif" font-size="22" font-weight="700" fill="#2F4A4F">Standar Pengendalian Mutu &amp; Ketelusuran Batch</text>
+    <text x="74" y="54" font-family="Inter, sans-serif" font-size="12.5" fill="#5E7478">Setiap pengiriman melewati verifikasi ukuran partikel (mesh), kadar air, dan kemurnian bahan baku</text>
+  </g>
+
+  <!-- 4 QC Stage Cards -->
+  <g transform="translate(56, 150)">
+    <rect width="330" height="145" rx="16" fill="#FAF7F2" stroke="#E8E1D4" stroke-width="1.5"/>
+    <circle cx="44" cy="44" r="20" fill="#F1EADF" stroke="#C8A45D" stroke-width="1.5"/>
+    <text x="44" y="49" text-anchor="middle" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="700" fill="#2F4A4F">01</text>
+    <text x="78" y="42" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#2F4A4F">Sortasi Bahan Baku Agro</text>
+    <text x="78" y="64" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">Pemisahan kontaminan fisik (logam, batu,</text>
+    <text x="78" y="82" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">plastik) menggunakan magnetic trap &amp; sortir</text>
+    <text x="78" y="100" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">sebelum masuk jalur penggilingan.</text>
+    <rect x="78" y="112" width="140" height="20" rx="10" fill="#E6EFEA"/>
+    <text x="148" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#3F6F6A">100% BEBAS KONTAMINAN</text>
+  </g>
+
+  <g transform="translate(414, 150)">
+    <rect width="330" height="145" rx="16" fill="#FAF7F2" stroke="#E8E1D4" stroke-width="1.5"/>
+    <circle cx="44" cy="44" r="20" fill="#F1EADF" stroke="#C8A45D" stroke-width="1.5"/>
+    <text x="44" y="49" text-anchor="middle" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="700" fill="#2F4A4F">02</text>
+    <text x="78" y="42" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#2F4A4F">Pengujian Kadar Air (Moisture)</text>
+    <text x="78" y="64" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">Pengukuran kelembapan menggunakan moisture</text>
+    <text x="78" y="82" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">analyzer digital agar serbuk tetap kering,</text>
+    <text x="78" y="100" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">mudah mengalir, dan tahan simpan.</text>
+    <rect x="78" y="112" width="140" height="20" rx="10" fill="#E6EFEA"/>
+    <text x="148" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#3F6F6A">SESUAI SPESIFIKASI PABRIK</text>
+  </g>
+
+  <g transform="translate(56, 315)">
+    <rect width="330" height="145" rx="16" fill="#FAF7F2" stroke="#E8E1D4" stroke-width="1.5"/>
+    <circle cx="44" cy="44" r="20" fill="#F1EADF" stroke="#C8A45D" stroke-width="1.5"/>
+    <text x="44" y="49" text-anchor="middle" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="700" fill="#2F4A4F">03</text>
+    <text x="78" y="42" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#2F4A4F">Uji Ayakan Multi-Mesh</text>
+    <text x="78" y="64" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">Sampling berkala pada rotary/vibrating</text>
+    <text x="78" y="82" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">sieve untuk menjamin distribusi ukuran</text>
+    <text x="78" y="100" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">partikel konsisten antar-batch pengiriman.</text>
+    <rect x="78" y="112" width="140" height="20" rx="10" fill="#E6EFEA"/>
+    <text x="148" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#3F6F6A">GRANULOMETRI TERKONTROL</text>
+  </g>
+
+  <g transform="translate(414, 315)">
+    <rect width="330" height="145" rx="16" fill="#FAF7F2" stroke="#C8A45D" stroke-width="1.8"/>
+    <circle cx="44" cy="44" r="20" fill="#3F6F6A"/>
+    <text x="44" y="49" text-anchor="middle" font-family="Outfit, Inter, sans-serif" font-size="18" font-weight="700" fill="#FAF7F2">04</text>
+    <text x="78" y="42" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#2F4A4F">Retained Sample &amp; Kode Batch</text>
+    <text x="78" y="64" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">Setiap lot pengiriman diberi label kode</text>
+    <text x="78" y="82" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">batch dan sampel arsip disimpan untuk</text>
+    <text x="78" y="100" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">jaminan kesesuaian kualitas jangka panjang.</text>
+    <rect x="78" y="112" width="140" height="20" rx="10" fill="#F1EADF"/>
+    <text x="148" y="126" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#2F4A4F">TRACEABILITY PENUH</text>
+  </g>
+
+  <rect x="56" y="478" width="688" height="36" rx="10" fill="#3F6F6A"/>
+  <text x="400" y="501" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#FAF7F2" letter-spacing="0.05em">CV ADC TANJAYA — KOMITMEN KUALITAS &amp; EKONOMI SIRKULAR INDUSTRI</text>
+</svg>

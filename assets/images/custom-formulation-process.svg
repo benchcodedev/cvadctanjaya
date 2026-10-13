@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" rx="24" fill="#FAF7F2"/>
+  <rect x="24" y="24" width="752" height="552" rx="20" fill="#FFFFFF" stroke="#E8E1D4" stroke-width="1.5"/>
+
+  <!-- Header bar inside graphic -->
+  <rect x="56" y="54" width="688" height="64" rx="14" fill="#E6EFEA"/>
+  <text x="84" y="84" font-family="Outfit, Inter, sans-serif" font-size="22" font-weight="700" fill="#2F4A4F">Laboratorium Kalibrasi Mesh &amp; Formulasi Khusus</text>
+  <text x="84" y="104" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#5E7478">Penyesuaian ukuran partikel (Mesh), kadar air (Moisture), dan rasio campuran biomassa</text>
+
+  <!-- 3 Visual Columns: Multi-Deck Sieve, Moisture Control, Bulk Packaging -->
+  <g transform="translate(56, 146)">
+    <rect width="212" height="310" rx="16" fill="#FAF7F2" stroke="#E8E1D4" stroke-width="1.5"/>
+    <text x="106" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#3F6F6A">01. MULTI-DECK MESH</text>
+    <!-- Stacked Sieves -->
+    <rect x="46" y="65" width="120" height="28" rx="6" fill="#FFFFFF" stroke="#3F6F6A" stroke-width="1.8"/>
+    <line x1="56" y1="79" x2="156" y2="79" stroke="#C8A45D" stroke-dasharray="6 4" stroke-width="1.5"/>
+    <rect x="46" y="103" width="120" height="28" rx="6" fill="#FFFFFF" stroke="#3F6F6A" stroke-width="1.8"/>
+    <line x1="56" y1="117" x2="156" y2="117" stroke="#C8A45D" stroke-dasharray="4 3" stroke-width="1.5"/>
+    <rect x="46" y="141" width="120" height="28" rx="6" fill="#FFFFFF" stroke="#3F6F6A" stroke-width="1.8"/>
+    <line x1="56" y1="155" x2="156" y2="155" stroke="#C8A45D" stroke-dasharray="2 2" stroke-width="1.5"/>
+    <path d="M56 215 C78 188, 134 188, 156 215 Z" fill="#8E624A"/>
+    <text x="106" y="252" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2F4A4F">Presisi Partikel Seragam</text>
+    <text x="106" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#5E7478">Sesuai spesifikasi pabrik</text>
+  </g>
+
+  <g transform="translate(294, 146)">
+    <rect width="212" height="310" rx="16" fill="#FAF7F2" stroke="#C8A45D" stroke-width="1.8"/>
+    <text x="106" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#C8A45D">02. KADAR AIR &amp; RASIO</text>
+    <circle cx="106" cy="128" r="52" fill="#FFFFFF" stroke="#3F6F6A" stroke-width="2"/>
+    <circle cx="106" cy="128" r="38" stroke="#C8A45D" stroke-width="4" stroke-dasharray="180 60"/>
+    <text x="106" y="134" text-anchor="middle" font-family="Outfit, Inter, sans-serif" font-size="24" font-weight="700" fill="#2F4A4F">QC %</text>
+    <text x="106" y="218" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2F4A4F">Kontrol Kadar Air</text>
+    <text x="106" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#5E7478">Pengeringan terukur untuk</text>
+    <text x="106" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#5E7478">mencegah gumpalan &amp; jamur</text>
+  </g>
+
+  <g transform="translate(532, 146)">
+    <rect width="212" height="310" rx="16" fill="#FAF7F2" stroke="#E8E1D4" stroke-width="1.5"/>
+    <text x="106" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#3F6F6A">03. KEMASAN INDUSTRI</text>
+    <rect x="64" y="82" width="84" height="96" rx="10" fill="#FFFFFF" stroke="#3F6F6A" stroke-width="2"/>
+    <path d="M76 82 V64 H92 V82 M120 82 V64 H136 V82" stroke="#C8A45D" stroke-width="2"/>
+    <line x1="80" y1="118" x2="132" y2="118" stroke="#C8A45D" stroke-width="2"/>
+    <line x1="80" y1="138" x2="120" y2="138" stroke="#3F6F6A" stroke-width="2"/>
+    <text x="106" y="218" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2F4A4F">Karung PP &amp; Jumbo Bag</text>
+    <text x="106" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#5E7478">Siap kirim rutin ke pabrik</text>
+    <text x="106" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#5E7478">dengan proteksi kelembapan</text>
+  </g>
+
+  <!-- Footer Strip inside SVG -->
+  <rect x="56" y="482" width="688" height="62" rx="14" fill="#F1EADF"/>
+  <circle cx="92" cy="513" r="14" fill="#3F6F6A"/>
+  <path d="M86 513 L90 517 L99 508" stroke="#FAF7F2" stroke-width="2" stroke-linecap="round"/>
+  <text x="120" y="509" font-family="Inter, sans-serif" font-size="13.5" font-weight="700" fill="#2F4A4F">Konsultasi Spesifikasi Teknis &amp; Uji Sampel Material</text>
+  <text x="120" y="528" font-family="Inter, sans-serif" font-size="12" fill="#5E7478">Tim produksi CV ADC TANJAYA siap menyesuaikan formula tepung industri Anda.</text>
+</svg>

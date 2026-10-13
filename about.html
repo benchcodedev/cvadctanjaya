@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami — CV ADC TANJAYA | Produsen Tepung Industri &amp; Biomassa Indonesia</title>
+  <meta name="description" content="Mengenal CV ADC TANJAYA, produsen tepung industri non-pangan yang mengolah biomassa dan hasil samping agro menjadi serbuk presisi untuk pabrik manufaktur, papan partikel, energi, pakan, dan pupuk." />
+  <meta name="keywords" content="tentang CV ADC TANJAYA, pabrik tepung industri, produsen serbuk biomassa, pabrik tepung batok kelapa, pabrik tepung kayu" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tentang CV ADC TANJAYA — Produsen Tepung Industri Presisi" />
+  <meta property="og:description" content="Mitra strategis pengadaan tepung industri berbasis biomassa dan hasil agro dengan kontrol kehalusan mesh dan kadar air ketat." />
+  <meta property="og:image" content="assets/images/about-biomass-showcase.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Tentang CV ADC TANJAYA",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "CV ADC TANJAYA",
+      "legalName": "CV ADC TANJAYA",
+      "description": "Produsen tepung industri non-pangan dari biomassa dan hasil agro di Indonesia."
+    }
+  }
+  </script>
+</head>
+<body class="bg-[#FFFFFF] text-[#3B2D23] antialiased">
+
+  <!-- STICKY HEADER -->
+  <header class="site-header sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/icons/logo.svg" alt="Logo CV ADC TANJAYA" width="44" height="44" class="w-11 h-11" />
+        <div>
+          <span class="block font-serif-luxury text-xl sm:text-2xl font-bold tracking-tight text-[#3B2D23] leading-none">CV ADC TANJAYA</span>
+          <span class="block mt-1 text-[11px] font-semibold uppercase tracking-widest text-[#7A5C45]" data-id="Produsen Tepung Industri" data-en="Industrial Flour Manufacturer">Produsen Tepung Industri</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Beranda</a>
+        <a href="about.html" class="nav-link is-active" data-i18n="nav.about">Tentang Kami</a>
+        <a href="products.html" class="nav-link" data-i18n="nav.products">Produk</a>
+        <a href="industries.html" class="nav-link" data-i18n="nav.industries">Sektor Industri</a>
+        <a href="quality.html" class="nav-link" data-i18n="nav.quality">Kualitas &amp; QC</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Hubungi Kami</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <div class="lang-switch-group" role="group" aria-label="Pilih Bahasa">
+          <button type="button" class="lang-btn is-active" data-lang-switch="id" aria-pressed="true">ID</button>
+          <button type="button" class="lang-btn" data-lang-switch="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="contact.html#consultation-form" class="btn-primary !py-2.5 !px-5 text-sm">
+          <span data-i18n="nav.cta">Minta Penawaran</span>
+        </a>
+      </div>
+
+      <div class="flex lg:hidden items-center gap-2.5">
+        <div class="lang-switch-group">
+          <button type="button" class="lang-btn is-active" data-lang-switch="id">ID</button>
+          <button type="button" class="lang-btn" data-lang-switch="en">EN</button>
+        </div>
+        <button type="button" id="mobile-menu-open" class="touch-target w-11 h-11 rounded-xl bg-[#FBF7F1] border border-[#E6DDD0] text-[#3B2D23] flex items-center justify-center" aria-label="Buka Menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h12" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-drawer" class="hidden opacity-0 pointer-events-none fixed inset-0 z-50 bg-[#FFFFFF] transition-opacity duration-250 flex flex-col justify-between p-6 overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-[#E6DDD0] pb-4">
+        <div class="flex items-center gap-3">
+          <img src="assets/icons/logo.svg" alt="Logo CV ADC TANJAYA" class="w-10 h-10" />
+          <span class="font-serif-luxury text-xl font-bold text-[#3B2D23]">CV ADC TANJAYA</span>
+        </div>
+        <button type="button" id="mobile-menu-close" class="touch-target w-11 h-11 rounded-xl bg-[#FBF7F1] border border-[#E6DDD0] text-[#3B2D23] flex items-center justify-center" aria-label="Tutup Menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <nav class="my-8 flex flex-col gap-3 text-lg font-semibold text-[#3B2D23]">
+        <a href="index.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.home">Beranda</a>
+        <a href="about.html" class="py-3 px-4 rounded-xl bg-[#FBF7F1] text-[#7A5C45]" data-i18n="nav.about">Tentang Kami</a>
+        <a href="products.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.products">Produk</a>
+        <a href="industries.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.industries">Sektor Industri</a>
+        <a href="quality.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.quality">Kualitas &amp; QC</a>
+        <a href="contact.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.contact">Hubungi Kami</a>
+      </nav>
+      <div class="space-y-3 border-t border-[#E6DDD0] pt-5">
+        <a href="assets/docs/company-profile-cv-adc-tanjaya.pdf" data-config-pdf download class="btn-outline w-full"><span data-i18n="nav.pdf">Company Profile (PDF)</span></a>
+        <a href="contact.html#consultation-form" class="btn-primary w-full"><span data-i18n="nav.cta">Minta Penawaran</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO + BREADCRUMB -->
+    <section class="relative overflow-hidden page-hero-overlay text-[#FFFFFF] py-16 lg:py-20 border-b border-[#C9A66B]/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Breadcrumb" class="text-xs sm:text-sm text-[#FFFFFF]/85 flex items-center gap-2">
+          <a href="index.html" class="hover:text-[#C9A66B] transition-colors" data-i18n="nav.home">Beranda</a>
+          <span>/</span>
+          <span class="text-[#C9A66B] font-semibold" data-i18n="nav.about">Tentang Kami</span>
+        </nav>
+        <h1
+          class="mt-4 font-serif-luxury text-4xl sm:text-5xl font-bold text-[#FFFFFF]"
+          data-id="Profil Perusahaan CV ADC TANJAYA"
+          data-en="Company Profile — CV ADC TANJAYA"
+        >Profil Perusahaan CV ADC TANJAYA</h1>
+        <p
+          class="mt-3 max-w-2xl text-base sm:text-lg text-[#FFFFFF]/90"
+          data-id="Produsen tepung industri non-pangan yang mengedepankan ketepatan ukuran partikel (mesh), konsistensi kadar air, dan keandalan pasokan bagi industri nasional."
+          data-en="Non-food industrial flour manufacturer dedicated to particle size (mesh) precision, moisture consistency, and dependable B2B supply across Indonesia."
+        >
+          Produsen tepung industri non-pangan yang mengedepankan ketepatan ukuran partikel (mesh), konsistensi kadar air, dan keandalan pasokan bagi industri nasional.
+        </p>
+      </div>
+    </section>
+
+    <!-- COMPANY STORY & IDENTITY -->
+    <section class="py-20 bg-[#FFFFFF] border-b border-[#E6DDD0]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 reveal-on-scroll">
+            <span class="inline-block text-xs font-bold uppercase tracking-[0.18em] text-[#7A5C45] px-3.5 py-1 rounded-full bg-[#FBF7F1]" data-id="Identitas &amp; Fokus Kami" data-en="Our Identity &amp; Focus">Identitas &amp; Fokus Kami</span>
+            <h2 class="mt-3 font-serif-luxury text-3xl sm:text-4xl font-bold text-[#3B2D23]" data-id="Mitra Manufaktur Serbuk Biomassa &amp; Hasil Agro Terpercaya" data-en="Your Trusted Biomass &amp; Agro-Powder Manufacturing Partner">
+              Mitra Manufaktur Serbuk Biomassa &amp; Hasil Agro Terpercaya
+            </h2>
+            <p class="mt-4 text-base text-[#6E5A4C] leading-relaxed" data-id="CV ADC TANJAYA hadir untuk menjawab kebutuhan pabrik dan industri pengolahan di Indonesia akan pasokan tepung industri (non-pangan) yang stabil, bersih, dan konsisten. Kami mengolah berbagai komoditas biomassa seperti batok kelapa, kayu pilihan, onggok singkong, sekam padi, kulit kopi, kulit kacang tanah, dan bonggol jagung menjadi serbuk fungsional bernilai tambah tinggi." data-en="CV ADC TANJAYA was established to meet the growing demand from Indonesian factories and processing plants for clean, stable, and uniform non-food industrial flours. We process diverse biomass commodities—including coconut shells, selected wood, cassava pulp, rice husks, coffee husks, peanut shells, and corn cobs—into high-value functional powders.">
+              CV ADC TANJAYA hadir untuk menjawab kebutuhan pabrik dan industri pengolahan di Indonesia akan pasokan tepung industri (non-pangan) yang stabil, bersih, dan konsisten. Kami mengolah berbagai komoditas biomassa seperti batok kelapa, kayu pilihan, onggok singkong, sekam padi, kulit kopi, kulit kacang tanah, dan bonggol jagung menjadi serbuk fungsional bernilai tambah tinggi.
+            </p>
+            <p class="mt-3 text-base text-[#6E5A4C] leading-relaxed" data-id="Berbeda dari komoditas mentah yang belum terstandarisasi, setiap produk yang keluar dari fasilitas penggilingan CV ADC TANJAYA telah melewati proses pengeringan terukur dan pemisahan ayakan (mesh) yang ketat. Hal ini memastikan bahan baku siap langsung masuk ke jalur pencampuran atau mesin produksi pembeli tanpa menghambat efisiensi operasional." data-en="Unlike unstandardized raw agro-commodities, every product leaving CV ADC TANJAYA's milling facility undergoes controlled thermal drying and multi-deck mesh classification. This ensures raw materials are ready for immediate integration into your mixing or extrusion lines without operational bottlenecks.">
+              Berbeda dari komoditas mentah yang belum terstandarisasi, setiap produk yang keluar dari fasilitas penggilingan CV ADC TANJAYA telah melewati proses pengeringan terukur dan pemisahan ayakan (mesh) yang ketat. Hal ini memastikan bahan baku siap langsung masuk ke jalur pencampuran atau mesin produksi pembeli tanpa menghambat efisiensi operasional.
+            </p>
+
+            <div class="mt-6 p-5 rounded-2xl bg-[#FBF7F1] border border-[#E6DDD0]">
+              <div class="text-xs font-bold uppercase tracking-wider text-[#7A5C45]" data-id="Informasi Legal Perusahaan" data-en="Corporate Legal Entity">Informasi Legal Perusahaan</div>
+              <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                <div>
+                  <span class="text-[#6E5A4C]" data-id="Nama Badan Usaha:" data-en="Legal Entity Name:">Nama Badan Usaha:</span>
+                  <strong class="block text-[#3B2D23]">CV ADC TANJAYA</strong>
+                </div>
+                <div>
+                  <span class="text-[#6E5A4C]" data-id="Bidang Usaha:" data-en="Core Industry:">Bidang Usaha:</span>
+                  <strong class="block text-[#3B2D23]" data-id="Produsen Tepung Industri Non-Pangan" data-en="Non-Food Industrial Flour Manufacturing">Produsen Tepung Industri Non-Pangan</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 reveal-on-scroll">
+            <div class="rounded-3xl overflow-hidden border border-[#E6DDD0] bg-[#FBF7F1] shadow-sm">
+              <img src="assets/images/about-biomass-showcase.jpg" alt="Ekosistem Biomassa CV ADC TANJAYA" width="800" height="620" class="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Statistics Strip -->
+        <div id="hero-stats-grid" class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+      </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section class="py-20 bg-[#FBF7F1] border-b border-[#E6DDD0]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="luxury-card p-8 sm:p-10 reveal-on-scroll">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#FBF7F1] text-[#7A5C45] text-xs font-bold uppercase tracking-wider" data-id="Visi Perusahaan" data-en="Corporate Vision">Visi Perusahaan</span>
+            <h2 class="mt-4 font-serif-luxury text-3xl font-bold text-[#3B2D23]" data-id="Menjadi Produsen Tepung Industri Berbasis Biomassa Terdepan &amp; Paling Andal di Indonesia" data-en="To Be Indonesia's Most Reliable Biomass-Based Industrial Flour Manufacturer">
+              Menjadi Produsen Tepung Industri Berbasis Biomassa Terdepan &amp; Paling Andal di Indonesia
+            </h2>
+            <p class="mt-4 text-sm sm:text-base text-[#6E5A4C] leading-relaxed" data-id="Menghadirkan standar baru dalam pengolahan hasil samping agro dan biomassa melalui presisi teknologi penggilingan, konsistensi mutu antar-batch, serta kemitraan jangka panjang yang saling menguntungkan bagi sektor industri nasional." data-en="Setting a new benchmark in agricultural and biomass by-product valorization through precision milling technology, batch-to-batch quality consistency, and mutually beneficial long-term industrial partnerships.">
+              Menghadirkan standar baru dalam pengolahan hasil samping agro dan biomassa melalui presisi teknologi penggilingan, konsistensi mutu antar-batch, serta kemitraan jangka panjang yang saling menguntungkan bagi sektor industri nasional.
+            </p>
+          </div>
+
+          <div class="luxury-card p-8 sm:p-10 reveal-on-scroll">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#F4ECE1] text-[#3B2D23] text-xs font-bold uppercase tracking-wider" data-id="Misi Perusahaan" data-en="Corporate Mission">Misi Perusahaan</span>
+            <h2 class="mt-4 font-serif-luxury text-3xl font-bold text-[#3B2D23]" data-id="Empat Komitmen Utama Kami" data-en="Our Four Core Commitments">
+              Empat Komitmen Utama Kami
+            </h2>
+            <ul class="mt-4 space-y-3 text-sm sm:text-base text-[#6E5A4C]">
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0"></span>
+                <span data-id="Menjaga presisi ukuran partikel (mesh) dan stabilitas kadar air sesuai spesifikasi teknis tiap pabrik pembeli." data-en="Maintain exact particle size (mesh) distributions and moisture stability tailored to each buyer's factory specifications.">Menjaga presisi ukuran partikel (mesh) dan stabilitas kadar air sesuai spesifikasi teknis tiap pabrik pembeli.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0"></span>
+                <span data-id="Membangun rantai pasok bahan baku biomassa yang berkelanjutan dan memberdayakan sentra agro lokal." data-en="Build a sustainable biomass supply chain that empowers local agricultural communities and circular industry.">Membangun rantai pasok bahan baku biomassa yang berkelanjutan dan memberdayakan sentra agro lokal.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0"></span>
+                <span data-id="Menyediakan layanan formulasi khusus (custom blend) untuk mendukung inovasi dan efisiensi biaya R&amp;D mitra." data-en="Provide custom blending and milling solutions to support partner R&amp;D innovation and cost efficiency.">Menyediakan layanan formulasi khusus (custom blend) untuk mendukung inovasi dan efisiensi biaya R&amp;D mitra.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0"></span>
+                <span data-id="Menjamin ketepatan jadwal pengiriman dan ketersediaan stok penyangga bagi kontrak industri rutin." data-en="Guarantee on-time delivery schedules and buffer inventory availability for recurring industrial contracts.">Menjamin ketepatan jadwal pengiriman dan ketersediaan stok penyangga bagi kontrak industri rutin.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-16 bg-[#FBF7F1]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-on-scroll">
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-[#3B2D23]" data-id="Siap Bermitra dengan CV ADC TANJAYA?" data-en="Ready to Partner with CV ADC TANJAYA?">
+          Siap Bermitra dengan CV ADC TANJAYA?
+        </h2>
+        <p class="mt-3 text-base text-[#6E5A4C] max-w-2xl mx-auto" data-id="Jelajahi katalog lengkap produk tepung industri kami atau hubungi tim B2B kami untuk berdiskusi mengenai kebutuhan pabrik Anda." data-en="Explore our complete industrial flour catalog or contact our B2B team to discuss your factory's technical requirements.">
+          Jelajahi katalog lengkap produk tepung industri kami atau hubungi tim B2B kami untuk berdiskusi mengenai kebutuhan pabrik Anda.
+        </p>
+        <div class="mt-7 flex flex-wrap justify-center gap-4">
+          <a href="products.html" class="btn-primary">
+            <span data-id="Lihat Katalog Produk" data-en="Explore Product Catalog">Lihat Katalog Produk</span>
+          </a>
+          <a href="contact.html#consultation-form" class="btn-outline">
+            <span data-id="Hubungi Tim Kami" data-en="Contact Our Team">Hubungi Tim Kami</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer bg-[#5E4637] text-[#FFFFFF] border-t-2 border-[#C9A66B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-[#FFFFFF]/15">
+        <div class="flex items-center gap-3">
+          <img src="assets/icons/logo-light.svg" alt="Logo CV ADC TANJAYA" class="w-11 h-11" />
+          <div>
+            <span class="block font-serif-luxury text-2xl font-bold text-[#FFFFFF]">CV ADC TANJAYA</span>
+            <span class="block text-xs text-[#C9A66B]" data-config-address>Kawasan Industri &amp; Pergudangan Agro [Placeholder Alamat Lengkap Pabrik], Jawa Timur, Indonesia</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="assets/docs/company-profile-cv-adc-tanjaya.pdf" data-config-pdf download class="btn-secondary-light !py-2 !px-4 text-xs">
+            <span data-i18n="nav.pdf">Company Profile (PDF)</span>
+          </a>
+          <a href="contact.html#consultation-form" class="btn-gold !py-2 !px-5 text-xs">
+            <span data-i18n="nav.cta">Minta Penawaran</span>
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FFFFFF]/85">
+        <p>© 2026 CV ADC TANJAYA. All rights reserved.</p>
+        <div class="flex flex-wrap gap-5">
+          <a href="index.html" class="hover:text-[#C9A66B]" data-i18n="nav.home">Beranda</a>
+          <a href="about.html" class="hover:text-[#C9A66B]" data-i18n="nav.about">Tentang Kami</a>
+          <a href="products.html" class="hover:text-[#C9A66B]" data-i18n="nav.products">Produk</a>
+          <a href="industries.html" class="hover:text-[#C9A66B]" data-i18n="nav.industries">Sektor Industri</a>
+          <a href="quality.html" class="hover:text-[#C9A66B]" data-i18n="nav.quality">Kualitas &amp; QC</a>
+          <a href="contact.html" class="hover:text-[#C9A66B]" data-i18n="nav.contact">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating-actions">
+    <button type="button" id="back-to-top-btn" class="back-to-top-btn" aria-label="Kembali ke atas">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="https://wa.me/6281234567890" data-config-wa target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn"><img src="assets/icons/whatsapp.svg" alt="WhatsApp CV ADC TANJAYA" class="w-7 h-7" /></a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

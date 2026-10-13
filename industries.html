@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sektor Industri &amp; Aplikasi — CV ADC TANJAYA | Solusi Tepung Industri B2B</title>
+  <meta name="description" content="Solusi tepung industri CV ADC TANJAYA untuk sektor Biomassa &amp; Energi, Papan Partikel &amp; Plywood, Pakan Ternak, Pupuk Organik, Perekat Manufaktur, dan Komposit WPC." />
+  <meta name="keywords" content="aplikasi tepung industri, bahan baku briket biomassa, filler WPC, extender lem plywood, bahan baku pakan ternak onggok, carrier premix bonggol jagung, CV ADC TANJAYA" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sektor Industri yang Kami Layani — CV ADC TANJAYA" />
+  <meta property="og:description" content="Pasokan serbuk biomassa dan hasil agro presisi untuk 6 sektor manufaktur dan agroindustri utama di Indonesia." />
+  <meta property="og:image" content="assets/images/hero-industrial-biomass.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-[#FFFFFF] text-[#3B2D23] antialiased">
+
+  <!-- STICKY HEADER -->
+  <header class="site-header sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/icons/logo.svg" alt="Logo CV ADC TANJAYA" width="44" height="44" class="w-11 h-11" />
+        <div>
+          <span class="block font-serif-luxury text-xl sm:text-2xl font-bold tracking-tight text-[#3B2D23] leading-none">CV ADC TANJAYA</span>
+          <span class="block mt-1 text-[11px] font-semibold uppercase tracking-widest text-[#7A5C45]" data-id="Produsen Tepung Industri" data-en="Industrial Flour Manufacturer">Produsen Tepung Industri</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Beranda</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">Tentang Kami</a>
+        <a href="products.html" class="nav-link" data-i18n="nav.products">Produk</a>
+        <a href="industries.html" class="nav-link is-active" data-i18n="nav.industries">Sektor Industri</a>
+        <a href="quality.html" class="nav-link" data-i18n="nav.quality">Kualitas &amp; QC</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Hubungi Kami</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <div class="lang-switch-group" role="group" aria-label="Pilih Bahasa">
+          <button type="button" class="lang-btn is-active" data-lang-switch="id" aria-pressed="true">ID</button>
+          <button type="button" class="lang-btn" data-lang-switch="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="contact.html#consultation-form" class="btn-primary !py-2.5 !px-5 text-sm">
+          <span data-i18n="nav.cta">Minta Penawaran</span>
+        </a>
+      </div>
+
+      <div class="flex lg:hidden items-center gap-2.5">
+        <div class="lang-switch-group">
+          <button type="button" class="lang-btn is-active" data-lang-switch="id">ID</button>
+          <button type="button" class="lang-btn" data-lang-switch="en">EN</button>
+        </div>
+        <button type="button" id="mobile-menu-open" class="touch-target w-11 h-11 rounded-xl bg-[#FBF7F1] border border-[#E6DDD0] text-[#3B2D23] flex items-center justify-center" aria-label="Buka Menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h12" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-drawer" class="hidden opacity-0 pointer-events-none fixed inset-0 z-50 bg-[#FFFFFF] transition-opacity duration-250 flex flex-col justify-between p-6 overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-[#E6DDD0] pb-4">
+        <div class="flex items-center gap-3">
+          <img src="assets/icons/logo.svg" alt="Logo CV ADC TANJAYA" class="w-10 h-10" />
+          <span class="font-serif-luxury text-xl font-bold text-[#3B2D23]">CV ADC TANJAYA</span>
+        </div>
+        <button type="button" id="mobile-menu-close" class="touch-target w-11 h-11 rounded-xl bg-[#FBF7F1] border border-[#E6DDD0] text-[#3B2D23] flex items-center justify-center" aria-label="Tutup Menu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <nav class="my-8 flex flex-col gap-3 text-lg font-semibold text-[#3B2D23]">
+        <a href="index.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.home">Beranda</a>
+        <a href="about.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.about">Tentang Kami</a>
+        <a href="products.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.products">Produk</a>
+        <a href="industries.html" class="py-3 px-4 rounded-xl bg-[#FBF7F1] text-[#7A5C45]" data-i18n="nav.industries">Sektor Industri</a>
+        <a href="quality.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.quality">Kualitas &amp; QC</a>
+        <a href="contact.html" class="py-3 px-4 rounded-xl hover:bg-[#FBF7F1]" data-i18n="nav.contact">Hubungi Kami</a>
+      </nav>
+      <div class="space-y-3 border-t border-[#E6DDD0] pt-5">
+        <a href="assets/docs/company-profile-cv-adc-tanjaya.pdf" data-config-pdf download class="btn-outline w-full"><span data-i18n="nav.pdf">Company Profile (PDF)</span></a>
+        <a href="contact.html#consultation-form" class="btn-primary w-full"><span data-i18n="nav.cta">Minta Penawaran</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="relative overflow-hidden page-hero-overlay text-[#FFFFFF] py-16 lg:py-20 border-b border-[#C9A66B]/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Breadcrumb" class="text-xs sm:text-sm text-[#FFFFFF]/85 flex items-center gap-2">
+          <a href="index.html" class="hover:text-[#C9A66B] transition-colors" data-i18n="nav.home">Beranda</a>
+          <span>/</span>
+          <span class="text-[#C9A66B] font-semibold" data-i18n="nav.industries">Sektor Industri</span>
+        </nav>
+        <h1
+          class="mt-4 font-serif-luxury text-4xl sm:text-5xl font-bold text-[#FFFFFF]"
+          data-id="Aplikasi &amp; Sektor Industri yang Kami Layani"
+          data-en="Industrial Sectors &amp; Applications We Serve"
+        >Aplikasi &amp; Sektor Industri yang Kami Layani</h1>
+        <p
+          class="mt-3 max-w-2xl text-base sm:text-lg text-[#FFFFFF]/90"
+          data-id="Solusi bahan baku serbuk biomassa dan hasil agro yang disesuaikan dengan spesifikasi mesin di enam sektor industri utama."
+          data-en="Biomass and agro-based powder solutions engineered to match machinery tolerances across six primary industrial sectors."
+        >
+          Solusi bahan baku serbuk biomassa dan hasil agro yang disesuaikan dengan spesifikasi mesin di enam sektor industri utama.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 DETAILED SECTOR CARDS -->
+    <section class="py-20 bg-[#FBF7F1] border-b border-[#E6DDD0]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <!-- 1. Biomassa & Energi -->
+        <div class="luxury-card p-7 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center reveal-on-scroll">
+          <div class="lg:col-span-4 rounded-2xl overflow-hidden border border-[#E6DDD0] bg-[#FBF7F1]">
+            <img src="assets/images/coconut-shell-flour.jpg" alt="Biomassa & Energi - CV ADC TANJAYA" class="w-full h-auto" loading="lazy" />
+          </div>
+          <div class="lg:col-span-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF7F1] text-[#7A5C45] text-xs font-bold uppercase tracking-wider">
+              <img src="assets/icons/biomass-energy.svg" alt="" class="w-4 h-4" />
+              <span data-id="Sektor 01 • Energi Terbarukan" data-en="Sector 01 • Renewable Bio-Energy">Sektor 01 • Energi Terbarukan</span>
+            </div>
+            <h2 class="mt-3 font-serif-luxury text-3xl font-bold text-[#3B2D23]" data-id="Industri Biomassa, Briket &amp; Boiler Energi" data-en="Biomass Briquettes, Pellets &amp; Industrial Boilers">
+              Industri Biomassa, Briket &amp; Boiler Energi
+            </h2>
+            <p class="mt-3 text-sm sm:text-base text-[#6E5A4C] leading-relaxed" data-id="Penyediaan serbuk biomassa kering dengan nilai kalor optimal dan kadar abu terkontrol untuk pabrik briket arang/biomassa, produsen wood pellet, serta fasilitas co-firing boiler uap industri." data-en="Supplying dry biomass powders with optimal calorific profiles and controlled ash content for briquette plants, wood pellet producers, and industrial boiler co-firing.">
+              Penyediaan serbuk biomassa kering dengan nilai kalor optimal dan kadar abu terkontrol untuk pabrik briket arang/biomassa, produsen wood pellet, serta fasilitas co-firing boiler uap industri.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Batok Kelapa" data-en="Coconut Shell Flour">Tepung Batok Kelapa</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Kayu" data-en="Wood Flour">Tepung Kayu</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Kulit Kopi" data-en="Coffee Husk Flour">Tepung Kulit Kopi</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Sekam Padi" data-en="Rice Husk Flour">Tepung Sekam Padi</span>
+            </div>
+            <div class="mt-6">
+              <a href="contact.html?product=tepung-batok-kelapa#consultation-form" class="btn-primary !py-2.5 !px-5 text-sm">
+                <span data-id="Konsultasikan Kebutuhan Biomassa" data-en="Consult Biomass Supply">Konsultasikan Kebutuhan Biomassa</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Papan Partikel & Woodworking -->
+        <div class="luxury-card p-7 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center reveal-on-scroll">
+          <div class="lg:col-span-4 rounded-2xl overflow-hidden border border-[#E6DDD0] bg-[#FBF7F1]">
+            <img src="assets/images/wood-flour.jpg" alt="Papan Partikel & Woodworking - CV ADC TANJAYA" class="w-full h-auto" loading="lazy" />
+          </div>
+          <div class="lg:col-span-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF7F1] text-[#7A5C45] text-xs font-bold uppercase tracking-wider">
+              <img src="assets/icons/particle-board.svg" alt="" class="w-4 h-4" />
+              <span data-id="Sektor 02 • Panel &amp; Kayu Lapis" data-en="Sector 02 • Panel &amp; Plywood">Sektor 02 • Panel &amp; Kayu Lapis</span>
+            </div>
+            <h2 class="mt-3 font-serif-luxury text-3xl font-bold text-[#3B2D23]" data-id="Papan Partikel, Plywood, MDF &amp; Woodworking" data-en="Particle Board, Plywood, MDF &amp; Woodworking">
+              Papan Partikel, Plywood, MDF &amp; Woodworking
+            </h2>
+            <p class="mt-3 text-sm sm:text-base text-[#6E5A4C] leading-relaxed" data-id="Suplai tepung kayu berserat homogen untuk pencetakan papan partikel dan MDF, serta tepung batok kelapa dan tepung perekat sebagai extender/filler adonan lem resin pada industri kayu lapis (plywood) dan blockboard." data-en="Homogeneous wood flour for particle board and MDF pressing, paired with coconut shell flour and industrial adhesive flour as resin glue extenders in plywood and blockboard factories.">
+              Suplai tepung kayu berserat homogen untuk pencetakan papan partikel dan MDF, serta tepung batok kelapa dan tepung perekat sebagai extender/filler adonan lem resin pada industri kayu lapis (plywood) dan blockboard.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Kayu (Wood Flour)" data-en="Industrial Wood Flour">Tepung Kayu (Wood Flour)</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Perekat Industri" data-en="Industrial Adhesive Flour">Tepung Perekat Industri</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Batok Kelapa" data-en="Coconut Shell Flour">Tepung Batok Kelapa</span>
+            </div>
+            <div class="mt-6">
+              <a href="contact.html?product=tepung-kayu#consultation-form" class="btn-primary !py-2.5 !px-5 text-sm">
+                <span data-id="Minta Penawaran Sektor Panel" data-en="Request Panel Sector Quote">Minta Penawaran Sektor Panel</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Pakan Ternak -->
+        <div class="luxury-card p-7 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center reveal-on-scroll">
+          <div class="lg:col-span-4 rounded-2xl overflow-hidden border border-[#E6DDD0] bg-[#FBF7F1]">
+            <img src="assets/images/onggok-flour.jpg" alt="Industri Pakan Ternak - CV ADC TANJAYA" class="w-full h-auto" loading="lazy" />
+          </div>
+          <div class="lg:col-span-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF7F1] text-[#7A5C45] text-xs font-bold uppercase tracking-wider">
+              <img src="assets/icons/animal-feed.svg" alt="" class="w-4 h-4" />
+              <span data-id="Sektor 03 • Feed Mill &amp; Premix" data-en="Sector 03 • Feed Mill &amp; Premix">Sektor 03 • Feed Mill &amp; Premix</span>
+            </div>
+            <h2 class="mt-3 font-serif-luxury text-3xl font-bold text-[#3B2D23]" data-id="Industri Pakan Ternak &amp; Carrier Premix" data-en="Animal Feed Mills &amp; Premix Carriers">
+              Industri Pakan Ternak &amp; Carrier Premix
+            </h2>
+            <p class="mt-3 text-sm sm:text-base text-[#6E5A4C] leading-relaxed" data-id="Menyediakan bahan baku serat dan karbohidrat kering untuk formulasi pakan ruminansia/unggas, pengikat alami pelet pakan, serta tepung bonggol jagung berdaya serap tinggi sebagai carrier aditif cair dan premix." data-en="Providing dry fiber and carbohydrate ingredients for ruminant/poultry feed mills, natural pellet binders, and high-absorbency corn cob flour as a liquid additive and premix carrier.">
+              Menyediakan bahan baku serat dan karbohidrat kering untuk formulasi pakan ruminansia/unggas, pengikat alami pelet pakan, serta tepung bonggol jagung berdaya serap tinggi sebagai carrier aditif cair dan premix.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Onggok Singkong" data-en="Cassava Pulp Flour">Tepung Onggok Singkong</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Bonggol Jagung" data-en="Corn Cob Flour">Tepung Bonggol Jagung</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Kulit Kacang" data-en="Peanut Shell Flour">Tepung Kulit Kacang</span>
+              <span class="px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-xs font-semibold text-[#3B2D23]" data-id="Tepung Sekam Padi" data-en="Rice Husk Flour">Tepung Sekam Padi</span>
+            </div>
+            <div class="mt-6">
+              <a href="contact.html?product=tepung-onggok#consultation-form" class="btn-primary !py-2.5 !px-5 text-sm">
+                <span data-id="Minta Penawaran Bahan Pakan" data-en="Request Feed Ingredient Quote">Minta Penawaran Bahan Pakan</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Pupuk Organik, 5. Perekat & 6. Komposit Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <div class="luxury-card p-7 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#FBF7F1] border border-[#E6DDD0] flex items-center justify-center">
+                <img src="assets/icons/eco-leaf.svg" alt="" class="w-6 h-6" />
+              </div>
+              <span class="mt-4 inline-block text-xs font-bold uppercase tracking-wider text-[#7A5C45]">Sektor 04</span>
+              <h3 class="mt-1 font-serif-luxury text-2xl font-bold text-[#3B2D23]" data-id="Pupuk Organik &amp; Media Tanam" data-en="Organic Fertilizer &amp; Growing Media">Pupuk Organik &amp; Media Tanam</h3>
+              <p class="mt-2.5 text-sm text-[#6E5A4C] leading-relaxed" data-id="Matriks pembawa (carrier) mikroba pupuk hayati, bahan baku pupuk granul organik, kondisioner tanah, dan media tanam jamur." data-en="Microbial bio-fertilizer carrier matrix, granular organic fertilizer input, soil conditioner, and mushroom substrate.">
+                Matriks pembawa (carrier) mikroba pupuk hayati, bahan baku pupuk granul organik, kondisioner tanah, dan media tanam jamur.
+              </p>
+            </div>
+            <a href="contact.html?product=tepung-sekam-padi#consultation-form" class="mt-6 btn-outline w-full text-xs">
+              <span data-id="Konsultasi Sektor Pupuk" data-en="Consult Fertilizer Sector">Konsultasi Sektor Pupuk</span>
+            </a>
+          </div>
+
+          <div class="luxury-card p-7 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#FBF7F1] border border-[#E6DDD0] flex items-center justify-center">
+                <img src="assets/icons/adhesive-flour.svg" alt="" class="w-6 h-6" />
+              </div>
+              <span class="mt-4 inline-block text-xs font-bold uppercase tracking-wider text-[#7A5C45]">Sektor 05</span>
+              <h3 class="mt-1 font-serif-luxury text-2xl font-bold text-[#3B2D23]" data-id="Perekat &amp; Manufaktur" data-en="Adhesives &amp; Manufacturing">Perekat &amp; Manufaktur</h3>
+              <p class="mt-2.5 text-sm text-[#6E5A4C] leading-relaxed" data-id="Ekstender perekat resin industri, laminasi karton/core tube, matriks obat nyamuk bakar, serta media absorben &amp; tumbling logam." data-en="Industrial resin glue extender, paper core lamination, mosquito coil base matrix, and industrial absorbent/tumbling media.">
+                Ekstender perekat resin industri, laminasi karton/core tube, matriks obat nyamuk bakar, serta media absorben &amp; tumbling logam.
+              </p>
+            </div>
+            <a href="contact.html?product=tepung-perekat#consultation-form" class="mt-6 btn-outline w-full text-xs">
+              <span data-id="Konsultasi Sektor Perekat" data-en="Consult Adhesive Sector">Konsultasi Sektor Perekat</span>
+            </a>
+          </div>
+
+          <div class="luxury-card p-7 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-[#FBF7F1] border border-[#E6DDD0] flex items-center justify-center">
+                <img src="assets/icons/composite-filler.svg" alt="" class="w-6 h-6" />
+              </div>
+              <span class="mt-4 inline-block text-xs font-bold uppercase tracking-wider text-[#7A5C45]">Sektor 06</span>
+              <h3 class="mt-1 font-serif-luxury text-2xl font-bold text-[#3B2D23]" data-id="Komposit &amp; Filler Polimer" data-en="Composites &amp; Polymer Fillers">Komposit &amp; Filler Polimer</h3>
+              <p class="mt-2.5 text-sm text-[#6E5A4C] leading-relaxed" data-id="Pengisi penguat berserat alami untuk ekstrusi Wood Plastic Composite (WPC), profil bangunan ramah lingkungan, dan cetakan polimer." data-en="Natural fiber reinforcing filler for Wood Plastic Composite (WPC) extrusion, eco-building profiles, and molded polymers.">
+                Pengisi penguat berserat alami untuk ekstrusi Wood Plastic Composite (WPC), profil bangunan ramah lingkungan, dan cetakan polimer.
+              </p>
+            </div>
+            <a href="contact.html?product=campuran-tepung-khusus#consultation-form" class="mt-6 btn-outline w-full text-xs">
+              <span data-id="Konsultasi Sektor Komposit" data-en="Consult Composite Sector">Konsultasi Sektor Komposit</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer bg-[#5E4637] text-[#FFFFFF] border-t-2 border-[#C9A66B]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-[#FFFFFF]/15">
+        <div class="flex items-center gap-3">
+          <img src="assets/icons/logo-light.svg" alt="Logo CV ADC TANJAYA" class="w-11 h-11" />
+          <div>
+            <span class="block font-serif-luxury text-2xl font-bold text-[#FFFFFF]">CV ADC TANJAYA</span>
+            <span class="block text-xs text-[#C9A66B]" data-config-address>Kawasan Industri &amp; Pergudangan Agro [Placeholder Alamat Lengkap Pabrik], Jawa Timur, Indonesia</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="assets/docs/company-profile-cv-adc-tanjaya.pdf" data-config-pdf download class="btn-secondary-light !py-2 !px-4 text-xs"><span data-i18n="nav.pdf">Company Profile (PDF)</span></a>
+          <a href="contact.html#consultation-form" class="btn-gold !py-2 !px-5 text-xs"><span data-i18n="nav.cta">Minta Penawaran</span></a>
+        </div>
+      </div>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FFFFFF]/85">
+        <p>© 2026 CV ADC TANJAYA. All rights reserved.</p>
+        <div class="flex flex-wrap gap-5">
+          <a href="index.html" class="hover:text-[#C9A66B]" data-i18n="nav.home">Beranda</a>
+          <a href="about.html" class="hover:text-[#C9A66B]" data-i18n="nav.about">Tentang Kami</a>
+          <a href="products.html" class="hover:text-[#C9A66B]" data-i18n="nav.products">Produk</a>
+          <a href="industries.html" class="hover:text-[#C9A66B]" data-i18n="nav.industries">Sektor Industri</a>
+          <a href="quality.html" class="hover:text-[#C9A66B]" data-i18n="nav.quality">Kualitas &amp; QC</a>
+          <a href="contact.html" class="hover:text-[#C9A66B]" data-i18n="nav.contact">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+    <button type="button" id="back-to-top-btn" class="back-to-top-btn" aria-label="Kembali ke atas">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="https://wa.me/6281234567890" data-config-wa target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn"><img src="assets/icons/whatsapp.svg" alt="WhatsApp CV ADC TANJAYA" class="w-7 h-7" /></a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
