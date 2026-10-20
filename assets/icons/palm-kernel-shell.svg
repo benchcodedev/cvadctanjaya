@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#43628B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9acbdb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
   <!-- Palm Kernel Shell Outline -->
-  <path d="M4 13C4 7 8 3 12 3C16 3 20 7 20 13C20 18 16.5 21 12 21C7.5 21 4 18 4 13Z" fill="#E6EDF4" fill-opacity="0.6"/>
+  <path d="M4 13C4 7 8 3 12 3C16 3 20 7 20 13C20 18 16.5 21 12 21C7.5 21 4 18 4 13Z" fill="#E1EFF4" fill-opacity="0.6"/>
   <!-- Inner Kernel Ridge -->
-  <path d="M12 3V21" stroke="#43628B" stroke-width="1.2" stroke-dasharray="2 2"/>
+  <path d="M12 3V21" stroke="#9acbdb" stroke-width="1.2" stroke-dasharray="2 2"/>
   <path d="M7 11C8.5 13 10.5 14.5 12 15"/>
   <path d="M17 11C15.5 13 13.5 14.5 12 15"/>
   <path d="M8 7C9.5 8.5 10.5 9.5 12 10"/>
   <path d="M16 7C14.5 8.5 13.5 9.5 12 10"/>
   <!-- Fine Mesh 80 Powder Particles -->
-  <circle cx="8" cy="18" r="0.8" fill="#43628B" stroke="none"/>
-  <circle cx="12" cy="18.5" r="1" fill="#43628B" stroke="none"/>
-  <circle cx="16" cy="18" r="0.8" fill="#43628B" stroke="none"/>
+  <circle cx="8" cy="18" r="0.8" fill="#9acbdb" stroke="none"/>
+  <circle cx="12" cy="18.5" r="1" fill="#9acbdb" stroke="none"/>
+  <circle cx="16" cy="18" r="0.8" fill="#9acbdb" stroke="none"/>
 </svg>
