@@ -11,27 +11,30 @@
 window.ADC_CONFIG = {
   // Identitas Legal Perusahaan
   legalName: "CV ADC TANJAYA",
+  legalEntityFullName: "CV. ALVINDO CHELSEA TANJAYA",
   shortName: "ADC TANJAYA",
-  foundedYear: "2018", // [PLACEHOLDER] Tahun berdiri
+  city: "Semarang",
+  foundedYear: "2018",
   defaultLanguage: "id", // Bahasa utama: "id" (Indonesia), opsi: "en" (English)
 
-  // File Aset Utama (Ganti path jika mengganti logo atau PDF Company Profile)
+  // File Aset Utama (Logo resmi & PDF Company Profile)
   assets: {
-    logoDark: "assets/icons/logo.svg",
-    logoLight: "assets/icons/logo-light.svg",
+    logoDark: "assets/icons/logo.png",
+    logoLight: "assets/icons/logo.png",
+    logoSvg: "assets/icons/logo.svg",
     favicon: "assets/icons/favicon.svg",
     companyProfilePdf: "assets/docs/company-profile-cv-adc-tanjaya.pdf"
   },
 
-  // Kontak & Lokasi Pabrik / Kantor [PLACEHOLDER — Ganti dengan data asli]
+  // Kontak & Lokasi Pabrik / Kantor Resmi
   contact: {
     whatsappNumber: "6281234567890", // Format internasional tanpa '+' atau '-' untuk wa.me
     phoneDisplay: "+62 812-3456-7890 (Placeholder)",
     email: "marketing@adctanjaya.co.id",
     emailSecondary: "info@adctanjaya.co.id",
     address: {
-      id: "Kawasan Industri & Pergudangan Agro [Placeholder Alamat Lengkap Pabrik], Jawa Timur, Indonesia",
-      en: "Agro Industrial & Warehousing Estate [Factory Address Placeholder], East Java, Indonesia"
+      id: "Jl. Padi Raya No. 3, Semarang, Jawa Tengah, Indonesia",
+      en: "Jl. Padi Raya No. 3, Semarang, Central Java, Indonesia"
     },
     operationalHours: {
       id: "Senin – Sabtu: 08.00 – 17.00 WIB",
