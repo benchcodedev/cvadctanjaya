@@ -5,7 +5,7 @@
  * Mengelola:
  * 1. Sticky Navbar, Hamburger Menu Mobile Fullscreen, & Language Switcher (ID/EN)
  * 2. Injeksi Data Konfigurasi (Kontak, Alamat, PDF, Statistik) dari config.js
- * 3. Render Kartu Produk, Filter Kategori, & Kartu Khusus "Campuran Tepung Khusus"
+ * 3. Render Kartu Produk & Filter Kategori
  * 4. Modal Detail Produk + Auto-Fill Form "Minta Penawaran Produk Ini"
  * 5. Tabel Perbandingan Produk Otomatis dengan Highlight Champagne Gold
  * 6. Animasi Scroll-Reveal, Counter Statistik, FAQ Accordion, & Form B2B WhatsApp/Mailto
@@ -329,69 +329,7 @@
       const mainApp = product.specs.mainApp[lang] || product.specs.mainApp.id;
       const meshText = product.specs.mesh[lang] || product.specs.mesh.id;
 
-      // Special 9th Card: "Campuran Tepung Khusus"
-      if (product.isCustomCard) {
-        return `
-          <article
-            class="custom-blend-card flex flex-col justify-between overflow-hidden cursor-pointer group"
-            data-open-product="${product.id}"
-            tabindex="0"
-            role="button"
-            aria-label="${name}"
-          >
-            <div>
-              <div class="relative aspect-[4/3] overflow-hidden bg-[#162434] border-b border-[#43628B]/50">
-                <img
-                  src="${product.image}"
-                  alt="${name} - CV ADC TANJAYA"
-                  loading="lazy"
-                  width="800"
-                  height="600"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div class="absolute top-3.5 left-3.5 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#43628B] text-[#FFFFFF] text-xs font-bold tracking-wide shadow-sm">
-                  <img src="${product.icon}" alt="" class="w-4 h-4" />
-                  <span>${badge}</span>
-                </div>
-              </div>
-
-              <div class="p-6">
-                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#43628B]">
-                  <span>${lang === "en" ? "Custom B2B Service" : "Layanan Formulasi B2B"}</span>
-                </div>
-                <h3 class="mt-2 font-serif-luxury text-2xl font-bold text-[#FFFFFF] group-hover:text-[#43628B] transition-colors">
-                  ${name}
-                </h3>
-                <p class="mt-2.5 text-sm text-[#F0F4F8]/90 leading-relaxed">
-                  ${shortDesc}
-                </p>
-
-                <div class="mt-4 pt-4 border-t border-[#F0F4F8]/15 space-y-1.5 text-xs text-[#F0F4F8]/90">
-                  <div class="flex items-start justify-between gap-2">
-                    <span class="text-[#8CA9CC] font-semibold">${t("ui.specMainApp")}:</span>
-                    <span class="text-right font-medium">${mainApp}</span>
-                  </div>
-                  <div class="flex items-start justify-between gap-2">
-                    <span class="text-[#8CA9CC] font-semibold">Mesh:</span>
-                    <span class="text-right font-medium">${meshText}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="px-6 pb-6 pt-2 flex items-center gap-3">
-              <span class="btn-gold w-full text-sm">
-                <span>${t("ui.detailProduct")}</span>
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
-            </div>
-          </article>
-        `;
-      }
-
-      // Standard Industrial Flour Product Card (01 - 08)
+      // Kartu Produk Resmi (Mesh 80)
       return `
         <article
           class="luxury-card flex flex-col justify-between overflow-hidden cursor-pointer group"
