@@ -172,13 +172,13 @@
         const label = stat.label[lang] || stat.label.id;
         const note = stat.note ? (stat.note[lang] || stat.note.id) : "";
         return `
-          <div class="p-5 sm:p-6 rounded-2xl bg-[#FFFFFF]/95 border border-[#E6DDD0] shadow-sm backdrop-blur-sm">
-            <div class="flex items-baseline gap-1 font-serif-luxury text-3xl sm:text-4xl font-bold text-[#3B2D23]">
-              <span class="stat-counter text-[#7A5C45]" data-target="${stat.number}">0</span>
-              <span class="text-[#C9A66B] text-2xl sm:text-3xl">${suffix}</span>
+          <div class="p-5 sm:p-6 rounded-2xl bg-[#FFFFFF]/95 border border-[#C4E5EE] shadow-sm backdrop-blur-sm">
+            <div class="flex items-baseline gap-1 font-serif-luxury text-3xl sm:text-4xl font-bold text-[#0F2744]">
+              <span class="stat-counter text-[#0077B6]" data-target="${stat.number}">0</span>
+              <span class="text-[#90E0EF] text-2xl sm:text-3xl">${suffix}</span>
             </div>
-            <p class="mt-1.5 text-sm sm:text-base font-semibold text-[#3B2D23]">${label}</p>
-            ${note ? `<p class="mt-0.5 text-xs text-[#6E5A4C]">${note}</p>` : ""}
+            <p class="mt-1.5 text-sm sm:text-base font-semibold text-[#0F2744]">${label}</p>
+            ${note ? `<p class="mt-0.5 text-xs text-[#486581]">${note}</p>` : ""}
           </div>
         `;
       }).join("");
@@ -192,12 +192,12 @@
         const desc = qs.desc[lang] || qs.desc.id;
         return `
           <div class="sand-card p-6 sm:p-8">
-            <div class="flex items-baseline gap-1 font-serif-luxury text-4xl sm:text-5xl font-bold text-[#7A5C45]">
+            <div class="flex items-baseline gap-1 font-serif-luxury text-4xl sm:text-5xl font-bold text-[#0077B6]">
               <span class="stat-counter" data-target="${qs.number}">0</span>
-              <span class="text-[#C9A66B]">${suffix}</span>
+              <span class="text-[#90E0EF]">${suffix}</span>
             </div>
-            <h3 class="mt-3 text-xl sm:text-2xl font-bold text-[#3B2D23]">${title}</h3>
-            <p class="mt-2 text-sm sm:text-base text-[#6E5A4C] leading-relaxed">${desc}</p>
+            <h3 class="mt-3 text-xl sm:text-2xl font-bold text-[#0F2744]">${title}</h3>
+            <p class="mt-2 text-sm sm:text-base text-[#486581] leading-relaxed">${desc}</p>
           </div>
         `;
       }).join("");
@@ -300,7 +300,7 @@
     if (filtered.length === 0) {
       grid.innerHTML = `
         <div class="col-span-full sand-card p-10 text-center">
-          <p class="text-lg font-semibold text-[#3B2D23]">
+          <p class="text-lg font-semibold text-[#0F2744]">
             ${lang === "en" ? "No industrial flour products match your filter." : "Tidak ada produk tepung industri yang sesuai dengan filter pencarian."}
           </p>
           <button type="button" id="reset-product-filter" class="mt-4 btn-outline">
@@ -340,7 +340,7 @@
             aria-label="${name}"
           >
             <div>
-              <div class="relative aspect-[4/3] overflow-hidden bg-[#5E4637] border-b border-[#C9A66B]/40">
+              <div class="relative aspect-[4/3] overflow-hidden bg-[#0B2545] border-b border-[#90E0EF]/40">
                 <img
                   src="${product.image}"
                   alt="${name} - CV ADC TANJAYA"
@@ -349,30 +349,30 @@
                   height="600"
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div class="absolute top-3.5 left-3.5 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C9A66B] text-[#3B2D23] text-xs font-bold tracking-wide shadow-sm">
+                <div class="absolute top-3.5 left-3.5 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#90E0EF] text-[#0F2744] text-xs font-bold tracking-wide shadow-sm">
                   <img src="${product.icon}" alt="" class="w-4 h-4" />
                   <span>${badge}</span>
                 </div>
               </div>
 
               <div class="p-6">
-                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C9A66B]">
+                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#90E0EF]">
                   <span>${lang === "en" ? "Custom B2B Service" : "Layanan Formulasi B2B"}</span>
                 </div>
-                <h3 class="mt-2 font-serif-luxury text-2xl font-bold text-[#FFFFFF] group-hover:text-[#C9A66B] transition-colors">
+                <h3 class="mt-2 font-serif-luxury text-2xl font-bold text-[#FFFFFF] group-hover:text-[#90E0EF] transition-colors">
                   ${name}
                 </h3>
-                <p class="mt-2.5 text-sm text-[#FBF7F1]/90 leading-relaxed">
+                <p class="mt-2.5 text-sm text-[#F0F8FA]/90 leading-relaxed">
                   ${shortDesc}
                 </p>
 
-                <div class="mt-4 pt-4 border-t border-[#FBF7F1]/15 space-y-1.5 text-xs text-[#FBF7F1]/90">
+                <div class="mt-4 pt-4 border-t border-[#F0F8FA]/15 space-y-1.5 text-xs text-[#F0F8FA]/90">
                   <div class="flex items-start justify-between gap-2">
-                    <span class="text-[#C9A66B] font-semibold">${t("ui.specMainApp")}:</span>
+                    <span class="text-[#90E0EF] font-semibold">${t("ui.specMainApp")}:</span>
                     <span class="text-right font-medium">${mainApp}</span>
                   </div>
                   <div class="flex items-start justify-between gap-2">
-                    <span class="text-[#C9A66B] font-semibold">Mesh:</span>
+                    <span class="text-[#90E0EF] font-semibold">Mesh:</span>
                     <span class="text-right font-medium">${meshText}</span>
                   </div>
                 </div>
@@ -401,7 +401,7 @@
           aria-label="${name}"
         >
           <div>
-            <div class="relative aspect-[4/3] overflow-hidden bg-[#FBF7F1] border-b border-[#E6DDD0]">
+            <div class="relative aspect-[4/3] overflow-hidden bg-[#F0F8FA] border-b border-[#C4E5EE]">
               <img
                 src="${product.image}"
                 alt="${name} - CV ADC TANJAYA"
@@ -412,8 +412,8 @@
               />
               <div class="absolute top-3.5 left-3.5 flex items-center gap-1.5 px-3 py-1 rounded-full ${
                 product.isPopular
-                  ? "bg-[#C9A66B] text-[#3B2D23] font-bold"
-                  : "bg-[#FFFFFF]/95 text-[#3B2D23] border border-[#E6DDD0] font-semibold"
+                  ? "bg-[#90E0EF] text-[#0F2744] font-bold"
+                  : "bg-[#FFFFFF]/95 text-[#0F2744] border border-[#C4E5EE] font-semibold"
               } text-xs shadow-sm">
                 <img src="${product.icon}" alt="" class="w-4 h-4" />
                 <span>${badge}</span>
@@ -421,21 +421,21 @@
             </div>
 
             <div class="p-6">
-              <h3 class="font-serif-luxury text-2xl font-bold text-[#3B2D23] group-hover:text-[#7A5C45] transition-colors">
+              <h3 class="font-serif-luxury text-2xl font-bold text-[#0F2744] group-hover:text-[#0077B6] transition-colors">
                 ${name}
               </h3>
-              <p class="mt-2 text-sm text-[#6E5A4C] leading-relaxed line-clamp-3">
+              <p class="mt-2 text-sm text-[#486581] leading-relaxed line-clamp-3">
                 ${shortDesc}
               </p>
 
-              <div class="mt-4 pt-4 border-t border-[#E6DDD0] space-y-1.5 text-xs">
+              <div class="mt-4 pt-4 border-t border-[#C4E5EE] space-y-1.5 text-xs">
                 <div class="flex items-start justify-between gap-2">
-                  <span class="text-[#6E5A4C] font-medium">${t("ui.specMainApp")}:</span>
-                  <span class="text-right font-semibold text-[#3B2D23]">${mainApp}</span>
+                  <span class="text-[#486581] font-medium">${t("ui.specMainApp")}:</span>
+                  <span class="text-right font-semibold text-[#0F2744]">${mainApp}</span>
                 </div>
                 <div class="flex items-start justify-between gap-2">
-                  <span class="text-[#6E5A4C] font-medium">Mesh:</span>
-                  <span class="text-right text-[#7A5C45] font-semibold">${
+                  <span class="text-[#486581] font-medium">Mesh:</span>
+                  <span class="text-right text-[#0077B6] font-semibold">${
                     lang === "en" ? "Per factory spec" : "Sesuai spesifikasi pabrik"
                   }</span>
                 </div>
@@ -444,7 +444,7 @@
           </div>
 
           <div class="px-6 pb-6 pt-2">
-            <span class="btn-outline w-full text-sm group-hover:bg-[#7A5C45] group-hover:text-[#FFFFFF] group-hover:border-[#7A5C45]">
+            <span class="btn-outline w-full text-sm group-hover:bg-[#0077B6] group-hover:text-[#FFFFFF] group-hover:border-[#0077B6]">
               <span>${t("ui.detailProduct")}</span>
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -486,20 +486,20 @@
 
       return `
         <tr class="${product.isPopular ? "is-popular-row" : ""}">
-          <td class="font-semibold text-[#3B2D23]">
+          <td class="font-semibold text-[#0F2744]">
             <div class="flex items-center gap-3">
               <img src="${product.icon}" alt="" class="w-6 h-6 flex-shrink-0" />
               <div>
                 <button
                   type="button"
-                  class="text-left font-bold text-[#3B2D23] hover:text-[#7A5C45] underline decoration-[#C9A66B]/60 underline-offset-4 cursor-pointer"
+                  class="text-left font-bold text-[#0F2744] hover:text-[#0077B6] underline decoration-[#90E0EF]/60 underline-offset-4 cursor-pointer"
                   data-table-open-product="${product.id}"
                 >
                   ${name}
                 </button>
                 ${
                   product.isPopular
-                    ? `<div class="mt-1 inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#C9A66B] text-[#FFFFFF] text-[11px] font-bold">
+                    ? `<div class="mt-1 inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#90E0EF] text-[#FFFFFF] text-[11px] font-bold">
                         <span>★</span>
                         <span>${t("ui.popularBadge")}</span>
                       </div>`
@@ -509,7 +509,7 @@
             </div>
           </td>
           <td>${mainApp}</td>
-          <td class="font-medium text-[#7A5C45]">${mesh}</td>
+          <td class="font-medium text-[#0077B6]">${mesh}</td>
           <td>${moisture}</td>
           <td>${character}</td>
           <td>${packaging}</td>
@@ -544,7 +544,7 @@
           <button
             type="button"
             id="modal-close-btn"
-            class="touch-target absolute top-4 right-4 w-11 h-11 rounded-full bg-[#FBF7F1] border border-[#E6DDD0] text-[#3B2D23] hover:bg-[#F4ECE1] hover:border-[#C9A66B] flex items-center justify-center transition-colors cursor-pointer"
+            class="touch-target absolute top-4 right-4 w-11 h-11 rounded-full bg-[#F0F8FA] border border-[#C4E5EE] text-[#0F2744] hover:bg-[#E1F2F7] hover:border-[#90E0EF] flex items-center justify-center transition-colors cursor-pointer"
             aria-label="Close modal"
           >
             <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -596,63 +596,63 @@
     container.innerHTML = `
       <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
         <div class="md:col-span-5">
-          <div class="rounded-2xl overflow-hidden border border-[#E6DDD0] bg-[#FBF7F1]">
+          <div class="rounded-2xl overflow-hidden border border-[#C4E5EE] bg-[#F0F8FA]">
             <img src="${product.image}" alt="${name}" class="w-full h-auto object-cover" />
           </div>
-          <div class="mt-3 p-3.5 rounded-xl bg-[#FBF7F1] border border-[#7A5C45]/20 flex items-center gap-2.5 text-xs font-semibold text-[#3B2D23]">
+          <div class="mt-3 p-3.5 rounded-xl bg-[#F0F8FA] border border-[#0077B6]/20 flex items-center gap-2.5 text-xs font-semibold text-[#0F2744]">
             <img src="assets/icons/quality-shield.svg" alt="" class="w-5 h-5 flex-shrink-0" />
             <span>${t("ui.nonFoodNotice")}</span>
           </div>
         </div>
 
         <div class="md:col-span-7">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF7F1] border border-[#C9A66B]/50 text-xs font-semibold text-[#3B2D23]">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F0F8FA] border border-[#90E0EF]/50 text-xs font-semibold text-[#0F2744]">
             <img src="${product.icon}" alt="" class="w-4 h-4" />
             <span>${badge}</span>
           </div>
 
-          <h2 id="modal-product-title" class="mt-2 font-serif-luxury text-2xl sm:text-3xl font-bold text-[#3B2D23]">
+          <h2 id="modal-product-title" class="mt-2 font-serif-luxury text-2xl sm:text-3xl font-bold text-[#0F2744]">
             ${name}
           </h2>
 
-          <p class="mt-3 text-sm sm:text-base text-[#6E5A4C] leading-relaxed">
+          <p class="mt-3 text-sm sm:text-base text-[#486581] leading-relaxed">
             ${fullDesc}
           </p>
 
           <div class="mt-5">
-            <h3 class="text-sm font-bold uppercase tracking-wider text-[#7A5C45]">
+            <h3 class="text-sm font-bold uppercase tracking-wider text-[#0077B6]">
               ${t("ui.appsTitle")}
             </h3>
             <ul class="mt-2.5 space-y-2">
               ${apps.map((item) => `
-                <li class="flex items-start gap-2.5 text-sm text-[#3B2D23]">
-                  <span class="mt-1 w-2 h-2 rounded-full bg-[#C9A66B] flex-shrink-0"></span>
+                <li class="flex items-start gap-2.5 text-sm text-[#0F2744]">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-[#90E0EF] flex-shrink-0"></span>
                   <span>${item}</span>
                 </li>
               `).join("")}
             </ul>
           </div>
 
-          <div class="mt-5 p-4 rounded-2xl bg-[#FBF7F1] border border-[#E6DDD0]">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-[#7A5C45]">
+          <div class="mt-5 p-4 rounded-2xl bg-[#F0F8FA] border border-[#C4E5EE]">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#0077B6]">
               ${t("ui.specsTitle")}
             </h3>
             <dl class="mt-2.5 space-y-2 text-xs sm:text-sm">
-              <div class="flex justify-between gap-4 py-1 border-b border-[#E6DDD0]">
-                <dt class="text-[#6E5A4C] font-medium">${t("ui.specMesh")}</dt>
-                <dd class="text-right font-semibold text-[#3B2D23]">${product.specs.mesh[lang] || product.specs.mesh.id}</dd>
+              <div class="flex justify-between gap-4 py-1 border-b border-[#C4E5EE]">
+                <dt class="text-[#486581] font-medium">${t("ui.specMesh")}</dt>
+                <dd class="text-right font-semibold text-[#0F2744]">${product.specs.mesh[lang] || product.specs.mesh.id}</dd>
               </div>
-              <div class="flex justify-between gap-4 py-1 border-b border-[#E6DDD0]">
-                <dt class="text-[#6E5A4C] font-medium">${t("ui.specMoisture")}</dt>
-                <dd class="text-right font-semibold text-[#3B2D23]">${product.specs.moisture[lang] || product.specs.moisture.id}</dd>
+              <div class="flex justify-between gap-4 py-1 border-b border-[#C4E5EE]">
+                <dt class="text-[#486581] font-medium">${t("ui.specMoisture")}</dt>
+                <dd class="text-right font-semibold text-[#0F2744]">${product.specs.moisture[lang] || product.specs.moisture.id}</dd>
               </div>
-              <div class="flex justify-between gap-4 py-1 border-b border-[#E6DDD0]">
-                <dt class="text-[#6E5A4C] font-medium">${t("ui.specCharacter")}</dt>
-                <dd class="text-right font-semibold text-[#3B2D23]">${product.specs.character[lang] || product.specs.character.id}</dd>
+              <div class="flex justify-between gap-4 py-1 border-b border-[#C4E5EE]">
+                <dt class="text-[#486581] font-medium">${t("ui.specCharacter")}</dt>
+                <dd class="text-right font-semibold text-[#0F2744]">${product.specs.character[lang] || product.specs.character.id}</dd>
               </div>
               <div class="flex justify-between gap-4 pt-1">
-                <dt class="text-[#6E5A4C] font-medium">${t("ui.specPackaging")}</dt>
-                <dd class="text-right font-semibold text-[#3B2D23]">${product.specs.packaging[lang] || product.specs.packaging.id}</dd>
+                <dt class="text-[#486581] font-medium">${t("ui.specPackaging")}</dt>
+                <dd class="text-right font-semibold text-[#0F2744]">${product.specs.packaging[lang] || product.specs.packaging.id}</dd>
               </div>
             </dl>
           </div>
@@ -771,8 +771,8 @@
 
     function showFeedback(msg, isError) {
       if (!feedbackBox) return;
-      feedbackBox.classList.remove("hidden", "bg-[#FBF7F1]", "text-[#3B2D23]", "bg-[#FBF7F1]", "text-[#3B2D23]");
-      feedbackBox.classList.add(isError ? "bg-[#FBF7F1]" : "bg-[#FBF7F1]", "text-[#3B2D23]");
+      feedbackBox.classList.remove("hidden", "bg-[#F0F8FA]", "text-[#0F2744]", "bg-[#F0F8FA]", "text-[#0F2744]");
+      feedbackBox.classList.add(isError ? "bg-[#F0F8FA]" : "bg-[#F0F8FA]", "text-[#0F2744]");
       feedbackBox.textContent = msg;
     }
 
