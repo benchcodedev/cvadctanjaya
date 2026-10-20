@@ -2,563 +2,263 @@
  * ============================================================================
  * CV ADC TANJAYA — CENTRALIZED PRODUCT CATALOG DATA (products.js)
  * ============================================================================
- * Daftar produk ini merupakan PLACEHOLDER terstruktur yang mudah ditambah,
- * dihapus, atau disesuaikan dengan lini produksi aktual CV ADC TANJAYA.
+ * Lini produk resmi manufaktur CV ADC TANJAYA:
+ * 1. Tepung Batok (Coconut Shell Powder) — Rata-rata Mesh 80
+ * 2. Tepung Cangkang Sawit (Palm Kernel Shell Powder) — Rata-rata Mesh 80
+ * 3. Tepung Kayu Campur (Mixed Wood Flour) — Rata-rata Mesh 80
+ * 4. Campuran Tepung Khusus (Custom Blend & Tailored Mesh)
+ *
  * Seluruh kartu produk, filter kategori, modal detail, opsi form konsultasi,
  * dan tabel perbandingan membaca data langsung dari file ini (Bilingual ID/EN).
- *
- * CATATAN PENTING: Semua produk di bawah ini adalah TEPUNG INDUSTRI NON-PANGAN.
- * Nilai teknis menggunakan placeholder "Sesuai spesifikasi pabrik".
+ * CATATAN: Semua produk merupakan TEPUNG INDUSTRI NON-PANGAN.
  * ============================================================================
  */
 
 window.ADC_PRODUCT_CATEGORIES = [
-  { id: "all", label: { id: "Semua Produk", en: "All Products" } },
+  { id: "all", label: { id: "Semua Produk (Mesh 80)", en: "All Products (Mesh 80)" } },
   { id: "biomassa", label: { id: "Biomassa & Energi", en: "Biomass & Energy" } },
-  { id: "papan-partikel", label: { id: "Papan Partikel", en: "Particle Board" } },
-  { id: "pakan-ternak", label: { id: "Pakan Ternak", en: "Animal Feed" } },
-  { id: "pupuk", label: { id: "Pupuk & Media Tanam", en: "Fertilizer & Growing Media" } },
-  { id: "perekat-filler", label: { id: "Perekat & Filler", en: "Adhesives & Fillers" } }
+  { id: "perekat-filler", label: { id: "Perekat & Filler Industri", en: "Adhesives & Industrial Fillers" } },
+  { id: "papan-partikel", label: { id: "WPC & Papan Kayu", en: "WPC & Wood Panels" } }
 ];
 
 window.ADC_PRODUCTS = [
   {
-    id: "tepung-batok-kelapa",
+    id: "tepung-batok",
     isCustomCard: false,
-    isPopular: true, // Di-highlight warna Champagne Gold di tabel perbandingan & kartu
-    categories: ["biomassa", "perekat-filler", "papan-partikel"],
+    isPopular: true,
+    categories: ["biomassa", "perekat-filler"],
     image: "assets/images/coconut-shell-flour.jpg",
     icon: "assets/icons/coconut-shell.svg",
     badge: {
-      id: "Paling Sering Dipesan",
-      en: "Most Requested"
+      id: "Rata-rata Mesh 80",
+      en: "Average Mesh 80"
     },
     name: {
-      id: "Tepung Batok Kelapa",
-      en: "Coconut Shell Flour"
+      id: "Tepung Batok (Tempurung Kelapa)",
+      en: "Coconut Shell Powder"
     },
     shortDesc: {
-      id: "Serbuk halus dari tempurung kelapa pilihan berdensitas tinggi untuk bahan baku briket biomassa, filler komposit, ekstender perekat kayu lapis, dan industri manufaktur.",
-      en: "High-density fine powder milled from selected coconut shells for biomass briquettes, composite fillers, plywood adhesive extenders, and industrial manufacturing."
+      id: "Serbuk halus tempurung kelapa tua pilihan dengan target kehalusan rata-rata Mesh 80 untuk bahan baku briket biomassa, karbon aktif, filler komposit resin, dan ekstender perekat kayu lapis (plywood).",
+      en: "High-density coconut shell powder milled to an average Mesh 80 fineness, ideal for biomass briquettes, activated carbon, composite resin fillers, and plywood glue extenders."
     },
     fullDesc: {
-      id: "Tepung Batok Kelapa CV ADC TANJAYA diproses dari tempurung kelapa tua pilihan yang telah dibersihkan dari serabut dan kontaminan fisik. Melalui tahapan pengeringan terkontrol dan penggilingan presisi, menghasilkan serbuk halus kaya lignin dengan daya ikat alami yang sangat baik untuk kebutuhan industri non-pangan.",
-      en: "CV ADC TANJAYA's Coconut Shell Flour is processed from selected mature coconut shells thoroughly cleaned of fibers and physical contaminants. Controlled drying and precision milling yield a lignin-rich fine powder with superior natural binding properties for non-food industrial applications."
+      id: "Tepung Batok CV ADC TANJAYA diproses dari tempurung kelapa tua pilihan berkualitas tinggi yang telah dibersihkan secara teliti dari serabut dan kontaminan fisik. Melalui tahapan pengeringan suhu terkontrol dan sistem penggilingan mekanis presisi, menghasilkan serbuk halus Mesh 80 kaya lignin alami dengan densitas tinggi, daya rekat stabil, dan kadar air rendah terukur untuk kelancaran lini manufaktur pabrik Anda.",
+      en: "CV ADC TANJAYA's Coconut Shell Powder is manufactured from selected mature coconut shells thoroughly cleaned of fibers and physical impurities. Controlled thermal drying and multi-stage precision milling produce a uniform Mesh 80 powder rich in natural lignin, offering stable bonding properties, controlled moisture, and exceptional purity for industrial manufacturing lines."
     },
     applications: {
       id: [
-        "Ekstender & filler perekat kayu lapis (plywood) dan laminasi",
-        "Bahan baku briket biomassa, karbon aktif, dan bahan bakar padat",
-        "Pengisi (filler) plastik komposit, resin termoset, dan komponen cetakan",
-        "Bahan baku obat nyamuk bakar dan produk pembakaran lambat"
+        "Ekstender & pengisi (filler) campuran lem resin kayu lapis (plywood) & panel laminasi",
+        "Bahan baku briket arang biomassa, shisha, dan prekursor karbon aktif berkualitas tinggi",
+        "Bahan pengisi (reinforcing filler) plastik komposit, resin termoset, dan komponen cetakan",
+        "Bahan dasar matriks pembakaran lambat pada industri obat nyamuk bakar dan dupa industri"
       ],
       en: [
-        "Plywood and lamination resin adhesive extender & filler",
-        "Raw material for biomass briquettes, activated carbon, and solid fuel",
-        "Reinforcing filler for plastic composites, thermoset resins, and molded parts",
-        "Base material for mosquito coils and slow-burning industrial products"
+        "Resin adhesive extender & filler for plywood, blockboard, and panel lamination",
+        "High-grade raw material for biomass charcoal briquettes, shisha, and activated carbon",
+        "Reinforcing filler for plastic composites, thermoset resins, and molded components",
+        "Combustion regulator matrix for mosquito coils and industrial incense"
       ]
     },
     specs: {
       mainApp: {
-        id: "Perekat Plywood, Biomassa & Filler Komposit",
-        en: "Plywood Adhesive, Biomass & Composite Filler"
+        id: "Perekat Plywood, Briket Biomassa & Karbon Aktif",
+        en: "Plywood Adhesives, Biomass Briquettes & Activated Carbon"
       },
       mesh: {
-        id: "Sesuai spesifikasi pabrik (tersedia opsi mesh halus – ekstra halus)",
-        en: "Per factory specification (fine to ultra-fine mesh options available)"
+        id: "Rata-rata Mesh 80 (Konsistensi Tinggi)",
+        en: "Average Mesh 80 (High Consistency)"
       },
       moisture: {
-        id: "Sesuai spesifikasi pabrik (dikeringkan secara terkontrol)",
-        en: "Per factory specification (controlled thermal drying)"
+        id: "≤ 10% (Pengeringan Terkontrol)",
+        en: "≤ 10% (Controlled Thermal Drying)"
       },
       character: {
-        id: "Serbuk cokelat tua, keras, kaya lignin & selulosa, daya rekat stabil",
-        en: "Dark brown powder, dense, rich in lignin & cellulose, stable bonding"
+        id: "Serbuk cokelat tua, partikel seragam, berdensitas tinggi, daya rekat stabil",
+        en: "Dark brown fine powder, uniform particle distribution, high density, stable bonding"
       },
       packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
+        id: "Karung PP 25 kg / 50 kg & Jumbo Bag (FIBC)",
+        en: "PP Woven Bag 25 kg / 50 kg & Jumbo Bag (FIBC)"
       }
     }
   },
   {
-    id: "tepung-kayu",
+    id: "tepung-cangkang-sawit",
     isCustomCard: false,
-    isPopular: true, // Di-highlight warna Champagne Gold di tabel perbandingan
+    isPopular: true,
+    categories: ["biomassa", "perekat-filler"],
+    image: "assets/images/palm-kernel-shell-flour.jpg",
+    icon: "assets/icons/palm-kernel-shell.svg",
+    badge: {
+      id: "Rata-rata Mesh 80",
+      en: "Average Mesh 80"
+    },
+    name: {
+      id: "Tepung Cangkang Sawit",
+      en: "Palm Kernel Shell Powder (PKS Powder)"
+    },
+    shortDesc: {
+      id: "Serbuk biomassa cangkang kelapa sawit (PKS) terstandar rata-rata Mesh 80 dengan densitas dan nilai kalor tinggi untuk bahan bakar boiler industri, briket, biochar, dan filler manufaktur.",
+      en: "Standardized Palm Kernel Shell (PKS) biomass powder with an average Mesh 80 fineness, boasting high density and calorific value for industrial boiler fuel, briquetting, biochar, and composite fillers."
+    },
+    fullDesc: {
+      id: "Tepung Cangkang Sawit (Palm Kernel Shell Powder) CV ADC TANJAYA diolah dari cangkang kelapa sawit murni berkualitas tinggi yang telah dicuci, dikeringkan, dan digiling presisi hingga kehalusan rata-rata Mesh 80. Memiliki nilai kalor pembakaran tinggi, kadar abu terukur, dan densitas solid yang luar biasa, menjadikannya pilihan unggulan untuk bahan bakar biomassa co-firing, briket ramah lingkungan, industri pengecoran logam, hingga filler komposit tahan tekanan.",
+      en: "CV ADC TANJAYA's Palm Kernel Shell (PKS) Powder is processed from clean, selected palm kernel shells washed, thermally dried, and pulverized to an average Mesh 80 fineness. Featuring high calorific value, controlled ash content, and superior solid density, it is the premier choice for boiler co-firing, eco-friendly briquettes, metallurgical reduction, and pressure-resistant composite fillers."
+    },
+    applications: {
+      id: [
+        "Bahan bakar serbuk biomassa efisiensi tinggi untuk boiler uap, burner, dan kiln industri",
+        "Bahan baku pembuatan briket biomassa berenergi tinggi dan arang aktif / biochar",
+        "Filler komposit berat, bahan abrasif pembersih lembut, dan campuran kampas rem/gesek",
+        "Bahan reduktor alternatif pada proses metalurgi dan industri pengecoran"
+      ],
+      en: [
+        "High-efficiency pulverized biomass fuel for industrial steam boilers, burners, and kilns",
+        "Premium feedstock for high-energy biomass briquettes, biochar, and activated carbon",
+        "Heavy-duty composite filler, mild blasting abrasive, and friction/brake pad additives",
+        "Alternative carbon reducing agent for metallurgical processing and foundries"
+      ]
+    },
+    specs: {
+      mainApp: {
+        id: "Bahan Bakar Boiler, Briket Biomassa & Filler Industri",
+        en: "Boiler Biomass Fuel, Briquettes & Industrial Fillers"
+      },
+      mesh: {
+        id: "Rata-rata Mesh 80 (Konsistensi Tinggi)",
+        en: "Average Mesh 80 (High Consistency)"
+      },
+      moisture: {
+        id: "≤ 10% (Kadar Air Rendah Terukur)",
+        en: "≤ 10% (Controlled Low Moisture)"
+      },
+      character: {
+        id: "Serbuk cokelat kehitaman keras, densitas tinggi, nilai kalor pembakaran unggul",
+        en: "Dense dark charcoal-brown powder, high hardness, superior calorific value"
+      },
+      packaging: {
+        id: "Karung PP 25 kg / 50 kg & Jumbo Bag (FIBC)",
+        en: "PP Woven Bag 25 kg / 50 kg & Jumbo Bag (FIBC)"
+      }
+    }
+  },
+  {
+    id: "tepung-kayu-campur",
+    isCustomCard: false,
+    isPopular: true,
     categories: ["papan-partikel", "perekat-filler", "biomassa"],
     image: "assets/images/wood-flour.jpg",
     icon: "assets/icons/wood-log.svg",
     badge: {
-      id: "Unggulan Industri",
-      en: "Industrial Bestseller"
+      id: "Rata-rata Mesh 80",
+      en: "Average Mesh 80"
     },
     name: {
-      id: "Tepung Kayu (Wood Flour)",
-      en: "Industrial Wood Flour"
+      id: "Tepung Kayu Campur",
+      en: "Mixed Wood Flour"
     },
     shortDesc: {
-      id: "Serbuk selulosa kayu murni dengan kehalusan seragam untuk industri Wood Plastic Composite (WPC), papan partikel, MDF, pelet kayu, dan filler industri.",
-      en: "Pure wood cellulose powder with uniform fineness for Wood Plastic Composite (WPC), particle board, MDF, wood pellets, and industrial fillers."
+      id: "Serbuk selulosa kayu campur pilihan berukuran rata-rata Mesh 80 dengan keseragaman serat tinggi untuk industri Wood Plastic Composite (WPC), papan partikel, MDF, pelet biomassa, dan filler dempul.",
+      en: "Selected mixed wood cellulose powder milled to an average Mesh 80 fineness with high fiber uniformity for Wood Plastic Composite (WPC), particle board, MDF, biomass pellets, and putty fillers."
     },
     fullDesc: {
-      id: "Dihasilkan dari bahan baku kayu kering pilihan tanpa kulit kayu maupun bahan pengawet kimia berbahaya. Tepung Kayu kami melewati proses multi-ayakan sehingga memiliki distribusi ukuran partikel yang konsisten, ideal untuk pencampuran ekstrusi polimer (WPC), pencetakan papan partikel, hingga energi biomassa.",
-      en: "Produced from selected dry timber free from bark and hazardous chemical preservatives. Our Industrial Wood Flour undergoes multi-stage sieving to ensure consistent particle size distribution, ideal for polymer extrusion (WPC), particle board pressing, and biomass energy."
+      id: "Tepung Kayu Campur CV ADC TANJAYA diproduksi dari campuran serbuk kayu keras dan lunak terkurasi yang dikeringkan secara optimal tanpa kulit kayu maupun bahan kimia berbahaya. Pengayakan presisi pada kehalusan rata-rata Mesh 80 menghasilkan serat selulosa kayu yang homogen, memudahkan pencampuran polimer ekstrusi (WPC), penyerapan resin yang merata pada papan cetak, serta pembakaran bersih pada pelet biomassa.",
+      en: "CV ADC TANJAYA's Mixed Wood Flour is milled from curated mixed hardwood and softwood species, thoroughly dried without bark or hazardous chemical treatments. Precision sieving at an average Mesh 80 specification yields homogeneous cellulose fibers that blend seamlessly in polymer extrusion (WPC), ensure uniform resin absorption in board pressing, and provide clean combustion for biomass pellets."
     },
     applications: {
       id: [
-        "Campuran utama Wood Plastic Composite (WPC) decking & profil bangunan",
-        "Bahan baku papan partikel (particle board), MDF, dan woodworking",
-        "Bahan baku wood pellet & briket bahan bakar boiler industri",
-        "Filler dempul kayu, perekat industri, dan komponen otomotif/manufaktur"
+        "Bahan baku utama Wood Plastic Composite (WPC) untuk decking, pagar, dan profil arsitektur",
+        "Filler dan penguat serat alami pada papan partikel (particle board), MDF, dan blockboard",
+        "Bahan pengisi dempul kayu industri, perekat panel, dan resin komposit cetak",
+        "Bahan baku pelet kayu (wood pellets) dan briket pemanas boiler biomassa"
       ],
       en: [
-        "Primary reinforcement for Wood Plastic Composite (WPC) decking & profiles",
-        "Raw material for particle board, MDF, and industrial woodworking",
-        "Feedstock for wood pellets & industrial boiler fuel briquettes",
-        "Filler for wood putty, industrial adhesives, and molded components"
+        "Primary natural filler for Wood Plastic Composite (WPC) decking and profiles",
+        "Reinforcing fiber filler in particle boards, MDF, and panel manufacturing",
+        "Extender for industrial wood putty, panel adhesives, and molded resin composites",
+        "Feedstock for wood pellets and clean industrial boiler heating briquettes"
       ]
     },
     specs: {
       mainApp: {
-        id: "WPC, Papan Partikel (MDF) & Pelet Biomassa",
-        en: "WPC, Particle Board (MDF) & Biomass Pellets"
+        id: "WPC Komposit, Papan Partikel, MDF & Pelet Biomassa",
+        en: "WPC Composites, Particle Board, MDF & Biomass Pellets"
       },
       mesh: {
-        id: "Sesuai spesifikasi pabrik (opsi mesh kasar hingga halus)",
-        en: "Per factory specification (coarse to fine mesh options)"
+        id: "Rata-rata Mesh 80 (Konsistensi Tinggi)",
+        en: "Average Mesh 80 (High Consistency)"
       },
       moisture: {
-        id: "Sesuai spesifikasi pabrik (rendah kelembapan untuk ekstrusi)",
-        en: "Per factory specification (low moisture tailored for extrusion)"
+        id: "≤ 8% - 10% (Optimal untuk Ekstrusi & Pengeleman)",
+        en: "≤ 8% - 10% (Optimized for Extrusion & Bonding)"
       },
       character: {
-        id: "Serat selulosa cerah alami, ringan, daya serap resin merata",
-        en: "Natural light cellulose fiber, lightweight, uniform resin absorption"
+        id: "Serat selulosa kayu alami cerah hingga sedang, homogen, daya serap resin merata",
+        en: "Natural light-to-medium wood cellulose fiber, homogeneous, uniform resin absorption"
       },
       packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
-      }
-    }
-  },
-  {
-    id: "tepung-onggok",
-    isCustomCard: false,
-    isPopular: false,
-    categories: ["pakan-ternak", "perekat-filler", "biomassa"],
-    image: "assets/images/onggok-flour.jpg",
-    icon: "assets/icons/cassava-onggok.svg",
-    badge: {
-      id: "Pakan & Binder",
-      en: "Feed & Binder Grade"
-    },
-    name: {
-      id: "Tepung Onggok Singkong",
-      en: "Cassava Pulp Flour (Onggok)"
-    },
-    shortDesc: {
-      id: "Serbuk serat singkong kering berkualitas untuk bahan baku campuran pakan ternak, pengikat (binder) pelet, obat nyamuk bakar, dan aplikasi industri.",
-      en: "High-quality dried cassava fiber powder for animal feed formulation, pellet binder, mosquito coil base, and industrial applications."
-    },
-    fullDesc: {
-      id: "Tepung Onggok diproses dari ampas serat singkong pilihan yang dikeringkan secara higienis dan digiling halus agar bebas bau asam dan tidak menggumpal. Kandungan serat dan sisa pati alaminya menjadikan tepung onggok sangat efektif sebagai bahan pengisi pakan ternak ruminansia/unggas serta pengikat alami pada pembuatan pelet atau briket.",
-      en: "Processed from selected cassava fibrous pulp that is hygienically dried and finely milled to prevent sour odor and clumping. Its natural fiber and residual starch content make it highly effective as a bulk ingredient for livestock feed and a natural binder for pellets or briquettes."
-    },
-    applications: {
-      id: [
-        "Bahan baku sumber serat dan karbohidrat pada industri pakan ternak",
-        "Pengikat alami (natural binder) pada pembuatan pelet pakan & briket",
-        "Bahan dasar pembentuk matriks pada industri obat nyamuk bakar",
-        "Substrat media fermentasi industri dan pupuk organik terpadu"
-      ],
-      en: [
-        "Fiber and carbohydrate source in industrial livestock feed formulations",
-        "Natural binder for animal feed pellets & charcoal/biomass briquettes",
-        "Matrix base ingredient for mosquito coil manufacturing",
-        "Industrial fermentation substrate and integrated organic fertilizer"
-      ]
-    },
-    specs: {
-      mainApp: {
-        id: "Campuran Pakan Ternak & Binder Pelet/Briket",
-        en: "Animal Feed Formulation & Pellet/Briquette Binder"
-      },
-      mesh: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      moisture: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      character: {
-        id: "Serbuk krem keputihan, berserat halus, memiliki daya ikat pati alami",
-        en: "Off-white cream powder, fine fiber, natural starch binding property"
-      },
-      packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
-      }
-    }
-  },
-  {
-    id: "tepung-sekam-padi",
-    isCustomCard: false,
-    isPopular: false,
-    categories: ["pakan-ternak", "pupuk", "biomassa", "papan-partikel"],
-    image: "assets/images/rice-husk-flour.jpg",
-    icon: "assets/icons/rice-husk.svg",
-    badge: {
-      id: "Silika & Biomassa",
-      en: "Silica & Agro-Fiber"
-    },
-    name: {
-      id: "Tepung Sekam Padi",
-      en: "Rice Husk Flour"
-    },
-    shortDesc: {
-      id: "Serbuk sekam padi hasil penggilingan merata untuk bahan baku komposit papan, campuran pakan, media pembawa pupuk organik, dan bahan bakar biomassa.",
-      en: "Uniformly milled rice husk powder for composite boards, feed mix, organic fertilizer carrier, and industrial biomass fuel."
-    },
-    fullDesc: {
-      id: "Mengolah sekam padi kering berkualitas menjadi serbuk halus berkeseragaman tinggi (dedak sekam industri / rice husk powder). Kandungan silika alami dan serat lignoselulosa pada sekam padi memberikan ketahanan cuaca yang baik untuk komposit WPC/papan partikel sekaligus berfungsi sebagai matriks pembawa (carrier) pada pupuk dan pakan.",
-      en: "Transforming dry rice husks into highly uniform industrial rice husk powder. Its natural silica and lignocellulosic fiber provide excellent weather resistance for WPC/composite boards while serving as a reliable carrier matrix in fertilizers and animal feed."
-    },
-    applications: {
-      id: [
-        "Filler komposit plastik-sekam (Rice Husk WPC) yang tahan rayap & cuaca",
-        "Bahan campuran serat kasar terukur pada industri pakan ternak",
-        "Media pembawa (carrier) pupuk hayati, kompos blok, dan pembenah tanah",
-        "Bahan bakar co-firing boiler biomassa dan briket agro-energi"
-      ],
-      en: [
-        "Termite- and weather-resistant Rice Husk WPC composite filler",
-        "Measured roughage fiber component in livestock feed manufacturing",
-        "Carrier medium for bio-fertilizers, compost blocks, and soil conditioners",
-        "Biomass boiler co-firing fuel and agro-energy briquettes"
-      ]
-    },
-    specs: {
-      mainApp: {
-        id: "Komposit WPC, Pupuk Organik, Pakan & Biomassa",
-        en: "WPC Composites, Organic Fertilizer, Feed & Biomass"
-      },
-      mesh: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      moisture: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      character: {
-        id: "Serbuk kuning kecokelatan, kaya silika alami, stabil & tahan lembap",
-        en: "Tan-beige powder, rich in natural silica, stable & moisture-resistant"
-      },
-      packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
-      }
-    }
-  },
-  {
-    id: "tepung-kulit-kopi",
-    isCustomCard: false,
-    isPopular: false,
-    categories: ["biomassa", "pupuk", "pakan-ternak"],
-    image: "assets/images/coffee-husk-flour.jpg",
-    icon: "assets/icons/coffee-husk.svg",
-    badge: {
-      id: "Bio-Energi & Agro",
-      en: "Bio-Energy & Agro"
-    },
-    name: {
-      id: "Tepung Kulit Kopi",
-      en: "Coffee Husk Flour"
-    },
-    shortDesc: {
-      id: "Serbuk biomassa dari kulit buah dan kulit tanduk kopi kering untuk pelet bio-energi, pupuk organik kaya unsur hara, dan campuran pakan ruminansia.",
-      en: "Biomass powder milled from dried coffee cherry husks and parchment for bio-energy pellets, nutrient-rich organic fertilizers, and ruminant feed."
-    },
-    fullDesc: {
-      id: "Tepung Kulit Kopi diproduksi dari kulit kopi kering hasil perkebunan yang disortir dan digiling hingga mencapai ukuran mesh yang seragam. Memiliki nilai kalor pembakaran yang kompetitif untuk bahan bakar biomassa pabrik, serta kaya bahan organik untuk industri pupuk dan pakan ternak.",
-      en: "Produced from sorted plantation-dried coffee husks milled to uniform mesh sizes. Offers competitive calorific value for industrial biomass fuel and rich organic matter for commercial fertilizer and livestock feed manufacturers."
-    },
-    applications: {
-      id: [
-        "Bahan baku pelet dan briket biomassa untuk boiler uap & pengering industri",
-        "Komponen kaya kalium & karbon organik pada pabrik pupuk organik granul",
-        "Bahan baku alternatif sumber serat pada pakan ternak ruminansia",
-        "Filler biokomposit ramah lingkungan beraroma alami"
-      ],
-      en: [
-        "Raw material for biomass pellets and briquettes in industrial steam boilers",
-        "Potassium- and organic-carbon-rich input for granular organic fertilizers",
-        "Alternative fiber source in ruminant livestock feed formulations",
-        "Eco-friendly biocomposite filler with natural earthy profile"
-      ]
-    },
-    specs: {
-      mainApp: {
-        id: "Bahan Bakar Biomassa, Pupuk Granul & Pakan",
-        en: "Biomass Fuel, Granular Fertilizer & Ruminant Feed"
-      },
-      mesh: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      moisture: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      character: {
-        id: "Serbuk cokelat kemerahan gelap, nilai kalor baik, kaya karbon organik",
-        en: "Deep reddish-brown powder, strong calorific profile, rich organic carbon"
-      },
-      packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
-      }
-    }
-  },
-  {
-    id: "tepung-kulit-kacang",
-    isCustomCard: false,
-    isPopular: false,
-    categories: ["pakan-ternak", "pupuk", "biomassa"],
-    image: "assets/images/peanut-shell-flour.jpg",
-    icon: "assets/icons/peanut-shell.svg",
-    badge: {
-      id: "Serat Alami",
-      en: "Natural Agro-Fiber"
-    },
-    name: {
-      id: "Tepung Kulit Kacang",
-      en: "Peanut Shell Flour"
-    },
-    shortDesc: {
-      id: "Serbuk kulit kacang tanah kering bertekstur homogen untuk bahan pengisi pakan ternak, media tanam organik, kompos industri, dan bahan bakar biomassa.",
-      en: "Homogeneous dried peanut shell powder for animal feed bulk fiber, organic growing media, industrial compost, and biomass fuel."
-    },
-    fullDesc: {
-      id: "Kulit kacang tanah memiliki struktur serat selulosa yang berpori dan ringan. Setelah melalui proses pembersihan tanah/pasir, pengeringan, dan penggilingan halus di fasilitas CV ADC TANJAYA, tepung kulit kacang siap digunakan sebagai bahan baku serat pakan, pembawa mikroba pupuk, maupun filler papan komposit.",
-      en: "Peanut shells possess a porous, lightweight cellulose fiber structure. After soil/sand removal, thermal drying, and fine milling at CV ADC TANJAYA, our Peanut Shell Flour is ready for use as feed fiber, microbial fertilizer carrier, or composite board filler."
-    },
-    applications: {
-      id: [
-        "Sumber serat kasar (crude fiber) ekonomis pada formulasi pakan ternak",
-        "Bahan baku pupuk organik, media kompos, dan kondisioner aerasi tanah",
-        "Bahan campuran briket biomassa dan bahan bakar padat alternatif",
-        "Pengisi ringan (lightweight filler) pada pembuatan papan partikel agro"
-      ],
-      en: [
-        "Economical crude fiber source in commercial livestock feed formulations",
-        "Base material for organic fertilizers, compost media, and soil aeration",
-        "Blending component for biomass briquettes and alternative solid fuels",
-        "Lightweight filler in agro-based particle board manufacturing"
-      ]
-    },
-    specs: {
-      mainApp: {
-        id: "Serat Pakan Ternak, Media Pupuk & Biomassa",
-        en: "Feed Fiber, Fertilizer Media & Biomass Blending"
-      },
-      mesh: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      moisture: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      character: {
-        id: "Serbuk cokelat muda kekuningan, berserat ringan, daya serap baik",
-        en: "Light sandy-brown powder, lightweight fiber, good absorbency"
-      },
-      packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
-      }
-    }
-  },
-  {
-    id: "tepung-bonggol-jagung",
-    isCustomCard: false,
-    isPopular: true, // Di-highlight warna Champagne Gold di tabel perbandingan
-    categories: ["pakan-ternak", "pupuk", "perekat-filler"],
-    image: "assets/images/corn-cob-flour.jpg",
-    icon: "assets/icons/corn-cob.svg",
-    badge: {
-      id: "Daya Serap Tinggi",
-      en: "High Absorbency Carrier"
-    },
-    name: {
-      id: "Tepung Bonggol Jagung",
-      en: "Corn Cob Flour & Grit"
-    },
-    shortDesc: {
-      id: "Serbuk dan grit bonggol jagung berdaya serap tinggi untuk carrier premix pakan/obat hewan, media budidaya jamur/pupuk, absorben industri, dan tumbling halus.",
-      en: "High-absorbency corn cob powder and grit for feed/veterinary premix carriers, mushroom/fertilizer substrates, industrial absorbents, and soft blasting."
-    },
-    fullDesc: {
-      id: "Bagian empulur dan cincin kayu bonggol jagung memiliki porositas mikro yang unik dan netral. CV ADC TANJAYA mengolah bonggol jagung kering menjadi tepung maupun grit presisi yang sangat ideal sebagai pembawa cairan nutrisi (liquid carrier) pada premix pakan ternak, media tanam agrikultur, hingga absorben tumpahan minyak industri.",
-      en: "The pith and woody ring of corn cobs feature unique, neutral micro-porosity. CV ADC TANJAYA processes dried corn cobs into precision flour and grit ideal as a liquid nutrient carrier in feed premixes, agricultural substrates, and industrial oil/liquid absorbents."
-    },
-    applications: {
-      id: [
-        "Carrier (pembawa) vitamin, mineral, dan aditif cair pada premix pakan ternak",
-        "Media tanam jamur industri, pembawa pupuk hayati, dan bedak benih",
-        "Absorben ramah lingkungan untuk cairan industri, oli, dan alas kandang",
-        "Media poles (tumbling/blasting lembut) komponen logam dan manufaktur"
-      ],
-      en: [
-        "Carrier for vitamins, minerals, and liquid additives in animal feed premixes",
-        "Industrial mushroom substrate, bio-fertilizer carrier, and seed coating",
-        "Eco-friendly industrial liquid/oil absorbent and premium animal bedding",
-        "Soft abrasive tumbling and polishing media for metal and molded parts"
-      ]
-    },
-    specs: {
-      mainApp: {
-        id: "Carrier Premix Pakan, Absorben & Media Agro",
-        en: "Feed Premix Carrier, Industrial Absorbent & Agro Media"
-      },
-      mesh: {
-        id: "Sesuai spesifikasi pabrik (tersedia ukuran grit maupun tepung halus)",
-        en: "Per factory specification (available in graded grit or fine flour)"
-      },
-      moisture: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      character: {
-        id: "Serbuk krem keemasan, porositas tinggi, bebas debu berlebih, pH netral",
-        en: "Golden-cream granules/powder, high porosity, low dust, neutral pH"
-      },
-      packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
-      }
-    }
-  },
-  {
-    id: "tepung-perekat",
-    isCustomCard: false,
-    isPopular: true, // Di-highlight warna Champagne Gold di tabel perbandingan
-    categories: ["perekat-filler", "papan-partikel"],
-    image: "assets/images/adhesive-flour.jpg",
-    icon: "assets/icons/adhesive-flour.svg",
-    badge: {
-      id: "Khusus Plywood & Panel",
-      en: "Plywood & Panel Grade"
-    },
-    name: {
-      id: "Tepung Perekat Industri",
-      en: "Industrial Adhesive Extender Flour"
-    },
-    shortDesc: {
-      id: "Tepung industri khusus (industrial glue extender & filler) untuk menjaga viskositas lem resin kayu lapis (plywood), blockboard, MDF, dan karton industri.",
-      en: "Specialized industrial flour (glue extender & filler) engineered to control resin viscosity in plywood, blockboard, MDF, and industrial packaging."
-    },
-    fullDesc: {
-      id: "Dirancang khusus untuk kebutuhan pabrik kayu lapis (plywood), veneer, dan laminasi papan. Tepung Perekat Industri CV ADC TANJAYA membantu mengontrol kekentalan (viskositas) campuran resin sintetis (seperti Urea-Formaldehyde atau Phenol-Formaldehyde), mencegah penetrasi lem berlebih pada pori kayu, dan mengoptimalkan efisiensi biaya produksi lem pabrik Anda.",
-      en: "Specially formulated for plywood, veneer, and panel lamination factories. CV ADC TANJAYA's Industrial Adhesive Flour controls the viscosity of synthetic resin mixes (such as UF or PF resins), prevents excessive glue bleed-through on wood veneers, and optimizes adhesive cost efficiency."
-    },
-    applications: {
-      id: [
-        "Extender & filler adonan lem pada pabrik kayu lapis (plywood) dan veneer",
-        "Pengontrol viskositas perekat pada industri blockboard, MDF, dan partikel",
-        "Campuran perekat laminasi kertas industri, core tube, dan kemasan berat",
-        "Pengisi matriks resin pada manufaktur komponen komposit cetak tekan"
-      ],
-      en: [
-        "Glue mix extender & filler in plywood and wood veneer manufacturing",
-        "Adhesive viscosity modifier for blockboard, MDF, and particle boards",
-        "Lamination adhesive component for industrial paper cores and heavy packaging",
-        "Resin matrix filler in compression-molded composite components"
-      ]
-    },
-    specs: {
-      mainApp: {
-        id: "Extender Lem Plywood, Veneer, Blockboard & Laminasi",
-        en: "Plywood Glue Extender, Veneer, Blockboard & Lamination"
-      },
-      mesh: {
-        id: "Sesuai spesifikasi pabrik (kehalusan tinggi agar tidak menyumbat roller spreader)",
-        en: "Per factory specification (high fineness for smooth roller-spreader flow)"
-      },
-      moisture: {
-        id: "Sesuai spesifikasi pabrik",
-        en: "Per factory specification"
-      },
-      character: {
-        id: "Serbuk sangat halus, viskositas terukur, dispersi merata di dalam resin",
-        en: "Ultra-fine cohesive powder, controlled viscosity, uniform resin dispersion"
-      },
-      packaging: {
-        id: "Karung PP / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "PP Woven Bag / FIBC Jumbo Bag (per factory specification)"
+        id: "Karung PP 25 kg / 50 kg & Jumbo Bag (FIBC)",
+        en: "PP Woven Bag 25 kg / 50 kg & Jumbo Bag (FIBC)"
       }
     }
   },
   {
     id: "campuran-tepung-khusus",
-    isCustomCard: true, // Kartu ke-9: Kartu khusus "Campuran Tepung Khusus"
+    isCustomCard: true,
     isPopular: false,
-    categories: ["biomassa", "papan-partikel", "pakan-ternak", "pupuk", "perekat-filler"],
+    categories: ["biomassa", "perekat-filler", "papan-partikel"],
     image: "assets/images/custom-blend-flour.jpg",
     icon: "assets/icons/custom-blend.svg",
     badge: {
-      id: "Formulasi Kustom B2B",
-      en: "Custom B2B Formulation"
+      id: "Formulasi B2B • Mesh Kustom",
+      en: "Custom B2B • Tailored Mesh"
     },
     name: {
       id: "Campuran Tepung Khusus (Custom Blend)",
-      en: "Custom Industrial Flour Blend"
+      en: "Custom Biomass Powder Blend"
     },
     shortDesc: {
-      id: "Formulasi campuran beberapa jenis biomassa dan ukuran mesh khusus yang dirancang presisi mengikuti parameter mesin dan target efisiensi pabrik Anda.",
-      en: "Custom multi-biomass blends and tailored mesh distributions precision-engineered to match your factory machinery parameters and cost targets."
+      id: "Formulasi campuran batok kelapa, cangkang sawit, atau serbuk kayu campur dengan rasio spesifik dan distribusi ukuran partikel khusus sesuai parameter lini produksi mesin pabrik Anda.",
+      en: "Custom formulation blending coconut shells, palm shells, or mixed wood powders at specified ratios and customized mesh distributions tailored to your factory machinery."
     },
     fullDesc: {
-      id: "Setiap lini produksi pabrik memiliki karakteristik mesin dan standar produk akhir yang berbeda. CV ADC TANJAYA melayani pembuatan Campuran Tepung Khusus (Custom Blending & Milling) — memadukan rasio bahan baku agro/biomassa, rentang kehalusan mesh, hingga batas kadar air yang disesuaikan penuh dengan R&D atau tim produksi Anda.",
-      en: "Every factory production line operates with distinct machinery parameters and end-product tolerances. CV ADC TANJAYA provides Custom Industrial Flour Blending & Milling — combining specific agro/biomass ratios, custom mesh distributions, and strict moisture limits tailored to your R&D and production team."
+      id: "Setiap lini produksi pabrik memiliki karakteristik mesin dan standar toleransi produk akhir yang spesifik. CV ADC TANJAYA melayani pembuatan Campuran Tepung Khusus (Custom Blending & Milling) — memadukan rasio bahan baku batok kelapa, cangkang sawit, maupun kayu campur pada kehalusan Mesh 80 atau rentang mesh khusus, kadar air terukur, dan uji coba batch produksi bersama tim teknis Anda.",
+      en: "Every factory line operates under distinct machinery tolerances. CV ADC TANJAYA offers Custom Blending & Milling services — combining specific ratios of coconut shells, palm shells, or mixed wood at Mesh 80 or bespoke particle size distributions, tailored moisture limits, and collaborative trial batches with your technical team."
     },
     applications: {
       id: [
-        "Formulasi rasio khusus antara beberapa serbuk biomassa sesuai resep pabrik",
-        "Penyesuaian target kehalusan partikel (custom mesh) dan kadar air spesifik",
-        "Pengembangan sampel uji coba (trial batch) bersama tim R&D pembeli",
-        "Kontrak pasokan rutin dengan jaminan konsistensi antar-batch pengiriman"
+        "Formulasi rasio khusus antara serbuk batok kelapa, cangkang sawit, dan kayu campur",
+        "Penyesuaian target kehalusan partikel khusus dan batas kadar air presisi",
+        "Pengembangan sampel uji coba (trial batch) bersama tim R&D & produksi pembeli",
+        "Kontrak pasokan rutin B2B dengan jaminan konsistensi antar-batch pengiriman"
       ],
       en: [
-        "Bespoke multi-biomass blending ratios tailored to your proprietary formula",
-        "Custom particle size distribution (mesh) and target moisture calibration",
-        "Collaborative trial sample development with your factory R&D engineers",
-        "Dedicated contract supply with strict batch-to-batch quality consistency"
+        "Bespoke blending ratios between coconut shell, palm kernel shell, and mixed wood powders",
+        "Tailored particle size distribution (custom mesh) and calibrated moisture limits",
+        "Collaborative trial sample development with your factory R&D and production engineers",
+        "Dedicated B2B contract supply with strict batch-to-batch quality consistency"
       ]
     },
     specs: {
       mainApp: {
-        id: "Disesuaikan Kebutuhan Spesifik Pabrik & R&D Mitra",
-        en: "Tailored to Specific Factory & Partner R&D Requirements"
+        id: "Disesuaikan Kebutuhan Spesifik Mesin & R&D Pabrik",
+        en: "Tailored to Factory Machinery & Partner R&D Requirements"
       },
       mesh: {
-        id: "Sesuai spesifikasi pabrik (kustomisasi penuh)",
-        en: "Per factory specification (fully customizable)"
+        id: "Rata-rata Mesh 80 / Kustomisasi Sesuai Permintaan",
+        en: "Average Mesh 80 / Fully Customizable on Request"
       },
       moisture: {
-        id: "Sesuai spesifikasi pabrik (kustomisasi penuh)",
-        en: "Per factory specification (fully customizable)"
+        id: "Disesuaikan dengan standar proses produksi mitra",
+        en: "Calibrated to partner manufacturing process standards"
       },
       character: {
         id: "Komposisi multi-material presisi dengan kerahasiaan formula terjaga",
         en: "Precision multi-material composition with strict formula confidentiality"
       },
       packaging: {
-        id: "Karung PP Polos / Custom Label / Jumbo Bag (sesuai spesifikasi pabrik)",
-        en: "Plain PP Bag / Private Label / FIBC Jumbo Bag (per factory specification)"
+        id: "Karung PP Polos / Custom Label / Jumbo Bag (FIBC)",
+        en: "Plain PP Bag / Private Label / FIBC Jumbo Bag"
       }
     }
   }

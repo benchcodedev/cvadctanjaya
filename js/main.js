@@ -435,9 +435,7 @@
                 </div>
                 <div class="flex items-start justify-between gap-2">
                   <span class="text-[#486581] font-medium">Mesh:</span>
-                  <span class="text-right text-[#0077B6] font-semibold">${
-                    lang === "en" ? "Per factory spec" : "Sesuai spesifikasi pabrik"
-                  }</span>
+                  <span class="text-right text-[#0077B6] font-semibold">${meshText}</span>
                 </div>
               </div>
             </div>
