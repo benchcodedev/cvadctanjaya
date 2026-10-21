@@ -182,9 +182,16 @@ textarea:focus-visible {
 
 /* Hero Main Title Typography & Responsive Scaling */
 .hero-main-title {
-  font-size: 1.7rem; /* ~27px on mobile EN */
-  line-height: 1.25;
-  letter-spacing: -0.02em;
+  font-size: 1.85rem; /* ~29.5px on mobile EN */
+  line-height: 1.22;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 400px) {
+  .hero-main-title {
+    font-size: 1.95rem; /* ~31px on mobile EN */
+    line-height: 1.2;
+  }
 }
 
 @media (min-width: 640px) {
@@ -208,16 +215,17 @@ textarea:focus-visible {
   }
 }
 
-/* Khusus Bahasa Indonesia di Layar HP: Font dikecilkan agar proporsional, kata panjang seperti 'Mentransformasi' tidak membuat baris patah janggal */
+/* Khusus Bahasa Indonesia di Layar HP: Disesuaikan lebih tegas & gagah (29px - 31px), pas dan rapi tanpa patah kata canggung */
 html[lang="id"] .hero-main-title {
-  font-size: 1.45rem; /* ~23px pada HP */
-  line-height: 1.3;
+  font-size: 1.8rem; /* ~28.8px pada layar HP kecil */
+  line-height: 1.22;
+  letter-spacing: -0.025em;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 390px) {
   html[lang="id"] .hero-main-title {
-    font-size: 1.55rem; /* ~25px pada layar HP sedang */
-    line-height: 1.28;
+    font-size: 1.92rem; /* ~30.7px pada layar HP standar */
+    line-height: 1.2;
   }
 }
 
