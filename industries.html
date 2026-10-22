@@ -300,11 +300,47 @@
     </div>
   </footer>
 
+    <!-- Floating WhatsApp & Back-to-Top Buttons -->
   <div class="floating-actions">
+    <!-- WhatsApp Multi-Contact Popup -->
+    <div id="wa-float-popup" class="hidden mb-2 w-72 rounded-2xl bg-[#FFFFFF] border border-[#BCDCE7] shadow-2xl overflow-hidden transition-all duration-200">
+      <div class="bg-[#25D366] text-[#FFFFFF] p-3.5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img src="assets/icons/whatsapp.svg" alt="" class="w-5 h-5" />
+          <span class="font-bold text-sm" data-id="Chat WhatsApp Resmi" data-en="Official WhatsApp Chat">Chat WhatsApp Resmi</span>
+        </div>
+        <button type="button" id="wa-popup-close-btn" class="text-white/80 hover:text-white text-lg leading-none font-bold cursor-pointer" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="p-3 bg-[#FFFFFF] space-y-2 text-left">
+        <p class="text-[11px] text-[#4D657D]" data-id="Pilih kontak perwakilan kami:" data-en="Select our representative:">Pilih kontak perwakilan kami:</p>
+        <a href="https://wa.me/6282133003300" target="_blank" rel="noopener noreferrer" data-config-wa-alvin class="flex items-center justify-between p-2.5 rounded-xl bg-[#F0F6F8] hover:bg-[#E1EFF4] transition-colors border border-[#BCDCE7] group">
+          <div>
+            <div class="font-bold text-xs text-[#0F2137] group-hover:text-[#184F66]">Alvin</div>
+            <div class="text-[11px] text-[#4D657D]">+62 821-3300-3300</div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full bg-[#25D366] text-white text-[11px] font-bold">Chat</span>
+        </a>
+        <a href="https://wa.me/6282323232222" target="_blank" rel="noopener noreferrer" data-config-wa-alfredo class="flex items-center justify-between p-2.5 rounded-xl bg-[#F0F6F8] hover:bg-[#E1EFF4] transition-colors border border-[#BCDCE7] group">
+          <div>
+            <div class="font-bold text-xs text-[#0F2137] group-hover:text-[#184F66]">Alfredo</div>
+            <div class="text-[11px] text-[#4D657D]">+62 823-2323-2222</div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full bg-[#25D366] text-white text-[11px] font-bold">Chat</span>
+        </a>
+      </div>
+    </div>
+
     <button type="button" id="back-to-top-btn" class="back-to-top-btn" aria-label="Kembali ke atas">
-      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </button>
-    <a href="https://wa.me/6281234567890" data-config-wa target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn"><img src="assets/icons/whatsapp.svg" alt="WhatsApp CV ADC TANJAYA" class="w-7 h-7" /></a>
+    <button
+      type="button"
+      id="whatsapp-float-toggle"
+      class="whatsapp-float-btn cursor-pointer"
+      aria-label="Konsultasi via WhatsApp"
+    ><img src="assets/icons/whatsapp.svg" alt="WhatsApp CV ADC TANJAYA" class="w-7 h-7" /></button>
   </div>
 
   <script src="js/config.js"></script>

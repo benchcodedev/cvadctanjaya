@@ -28,10 +28,15 @@ window.ADC_CONFIG = {
 
   // Kontak & Lokasi Pabrik / Kantor Resmi
   contact: {
-    whatsappNumber: "6281234567890", // Format internasional tanpa '+' atau '-' untuk wa.me
-    phoneDisplay: "+62 812-3456-7890 (Placeholder)",
-    email: "marketing@adctanjaya.co.id",
-    emailSecondary: "info@adctanjaya.co.id",
+    // WhatsApp Resmi CV ADC TANJAYA (2 Kontak)
+    whatsappList: [
+      { name: "Alvin", number: "6282133003300", display: "+62 821-3300-3300" },
+      { name: "Alfredo", number: "6282323232222", display: "+62 823-2323-2222" }
+    ],
+    whatsappNumber: "6282133003300", // Alvin (Kontak Utama)
+    whatsappNumberSecondary: "6282323232222", // Alfredo
+    phoneDisplay: "+62 821-3300-3300 (Alvin) / +62 823-2323-2222 (Alfredo)",
+    email: "adctanjaya@gmail.com",
     address: {
       id: "Jl. Padi Raya No. 3, Semarang, Jawa Tengah, Indonesia",
       en: "Jl. Padi Raya No. 3, Semarang, Central Java, Indonesia"
@@ -44,11 +49,10 @@ window.ADC_CONFIG = {
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.20960986985!2d112.6302809!3d-7.2756141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1710000000000!5m2!1sen!2sid"
   },
 
-  // Media Sosial [PLACEHOLDER]
+  // Media Sosial Resmi CV ADC TANJAYA
   social: {
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    facebook: "https://facebook.com"
+    instagram: "https://www.instagram.com/adctanjaya?srtk=cWRjNXdpM2Q2NWJ2",
+    tiktok: "https://www.tiktok.com/@cv.adc.tanjaya?_r=1&_t=ZS-9AliHDuj1YF"
   },
 
   // Strip Statistik Hero [PLACEHOLDER — Mudah diedit sesuai kapasitas aktual pabrik]

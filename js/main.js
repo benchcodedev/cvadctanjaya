@@ -144,9 +144,25 @@
       ? `Hello ${cfg.legalName}, I would like to inquire about industrial flour supply and specifications for our factory.`
       : `Halo ${cfg.legalName}, saya ingin berkonsultasi mengenai pengadaan dan spesifikasi tepung industri untuk kebutuhan pabrik kami.`;
     const waUrl = `https://wa.me/${cfg.contact.whatsappNumber}?text=${encodeURIComponent(defaultWaText)}`;
+    const waUrlAlvin = `https://wa.me/${cfg.contact.whatsappNumber}?text=${encodeURIComponent(defaultWaText)}`;
+    const waUrlAlfredo = `https://wa.me/${cfg.contact.whatsappNumberSecondary}?text=${encodeURIComponent(defaultWaText)}`;
 
     document.querySelectorAll("[data-config-wa]").forEach((el) => {
       el.setAttribute("href", waUrl);
+    });
+    document.querySelectorAll("[data-config-wa-alvin]").forEach((el) => {
+      el.setAttribute("href", waUrlAlvin);
+    });
+    document.querySelectorAll("[data-config-wa-alfredo]").forEach((el) => {
+      el.setAttribute("href", waUrlAlfredo);
+    });
+
+    // Update Social Media Links
+    document.querySelectorAll("[data-config-instagram]").forEach((el) => {
+      el.setAttribute("href", cfg.social.instagram);
+    });
+    document.querySelectorAll("[data-config-tiktok]").forEach((el) => {
+      el.setAttribute("href", cfg.social.tiktok);
     });
 
     // Update Google Maps Iframe
@@ -761,7 +777,7 @@
       }
 
       showFeedback(t("form.successWa"), false);
-      const waNumber = (window.ADC_CONFIG && window.ADC_CONFIG.contact.whatsappNumber) || "6281234567890";
+      const waNumber = (window.ADC_CONFIG && window.ADC_CONFIG.contact.whatsappNumber) || "6282133003300";
       const message = buildFormattedMessage(data);
       window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
     });
@@ -774,7 +790,7 @@
           return;
         }
         showFeedback(t("form.successMail"), false);
-        const targetEmail = (window.ADC_CONFIG && window.ADC_CONFIG.contact.email) || "marketing@adctanjaya.co.id";
+        const targetEmail = (window.ADC_CONFIG && window.ADC_CONFIG.contact.email) || "adctanjaya@gmail.com";
         const subject = `Permintaan Penawaran Tepung Industri - ${data.company} (${data.productName})`;
         const body = buildFormattedMessage(data);
         window.location.href = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -853,20 +869,44 @@
 
   function initFloatingActions() {
     const backToTopBtn = document.getElementById("back-to-top-btn");
-    if (!backToTopBtn) return;
+    const waToggleBtn = document.getElementById("whatsapp-float-toggle");
+    const waPopup = document.getElementById("wa-float-popup");
+    const waPopupClose = document.getElementById("wa-popup-close-btn");
 
-    const toggleBtn = () => {
-      backToTopBtn.classList.toggle("is-visible", window.scrollY > 420);
-    };
-    window.addEventListener("scroll", toggleBtn, { passive: true });
-    toggleBtn();
+    if (backToTopBtn) {
+      const toggleBtn = () => {
+        backToTopBtn.classList.toggle("is-visible", window.scrollY > 420);
+      };
+      window.addEventListener("scroll", toggleBtn, { passive: true });
+      toggleBtn();
 
-    backToTopBtn.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: prefersReducedMotion ? "auto" : "smooth"
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: prefersReducedMotion ? "auto" : "smooth"
+        });
       });
-    });
+    }
+
+    if (waToggleBtn && waPopup) {
+      waToggleBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        waPopup.classList.toggle("hidden");
+      });
+
+      if (waPopupClose) {
+        waPopupClose.addEventListener("click", (e) => {
+          e.stopPropagation();
+          waPopup.classList.add("hidden");
+        });
+      }
+
+      document.addEventListener("click", (e) => {
+        if (!waPopup.contains(e.target) && e.target !== waToggleBtn && !waToggleBtn.contains(e.target)) {
+          waPopup.classList.add("hidden");
+        }
+      });
+    }
   }
 
   function initProductSearch() {
