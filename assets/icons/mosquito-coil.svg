@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#184F66" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Mosquito Coil Spiral & Incense Essence -->
+  <path d="M12 12a1 1 0 0 1-1-1 3 3 0 0 1 3-3 5 5 0 0 1 5 5 7 7 0 0 1-7 7 9 9 0 0 1-9-9 11 11 0 0 1 11-11c3.5 0 6.8 1.5 9 4" />
+  <circle cx="12" cy="12" r="1.5" fill="#9acbdb" stroke="none" />
+  <path d="M19.5 4c.6-.8 1.2-1.2 2-1.5" stroke="#9acbdb" stroke-width="1.5" />
+</svg>
